@@ -57,7 +57,28 @@ Relationship - an association between entities
     2. One to many
     3. many to many
 
+SQL : 5 Components (non-case sensitive)
 
- Primary key -
- Foreign key -
+ DDL - Data Definition Lang. (Create, Alter, Drop, Truncate)
+ DML - Data Manipulation Lang.(Insert, Update, Delete)
+ DQL - Data Query Lang ( Select)
+ DCL - Data Control Lang ( Grant, Revoke)
+ TCL - Transaction Control Lang.(Rollback, Commit)
+
+Integrity Constraints: 3 in number
+ 1. Entity Integrity :  pk
+ 2. Domain Integrity : check
+ 3. Referential Integrity : fk
+
+Constraints : Restricting the kind of data that goes into a column
+
+ Primary key - An attribute or a combination of attributes (Composite primary key) that ensures unique identification of a tuple/row 
+  - it cannot be null ( nulls are neither zeros nor spaces. It is unknown or missing info.)
+  - no duplicates
+ Foreign key - An attribute that corresponds to the primary key of another table/relation. Can be duplicated and can have null values
+ Unique Key - Is like a primary key, except that it can accept only one null value
+ Check - Accepting only domain pool of values (IT,CSC,ECE,EEE,Mech,Civil, Instr.)
+ Default - Providing default values when not given explicitly
+
+
  

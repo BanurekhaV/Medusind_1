@@ -1,0 +1,90 @@
+--DDL
+/* Let us Create a database
+and then create table objects */
+
+create database MedusindDB
+
+use MedusindDB
+
+--create a table
+
+create table Department
+( Deptid int primary key,
+DeptName varchar(20) not null,
+DeptLocation varchar(20)
+)
+
+--Check for data
+select * from department
+--inserting some records into the department table
+insert into Department values(1,'IT','Mumbai')
+
+--insert by specifying column names in your own order
+insert into Department(DeptName,DeptLocation,Deptid) 
+values('HR','Ahmedabad',2)
+
+--when not providing any data values to a column, then also we can use the column list in 
+--insert command
+insert into Department(DeptName,Deptid) 
+values('Sales',3)
+
+--inserting multiple values with one insert statement
+insert into Department values(4,'Quality',null),
+(5,'Testing','Chennai')
+
+--create employee table
+create table Employee
+(Empid int primary key,
+Empname nvarchar(30) not null,
+Gender char(7) null,
+Salary float,
+DOJ date,
+Deptid int references Department(Deptid))
+
+insert into employee values(100,'Aman','Male',35000,'2022/10/20',null)
+insert into employee values(103,'Amit','Male',35000,'2022/12/05',1)
+insert into employee values(108,'Apurva','Female',35000,'2022/11/11',2)
+insert into employee values(104,'Kausalya','Female',35000,'2022/11/15',4)
+
+select * from employee
+
+--to view the entire description of a table
+sp_help Employee
+
+--adding column/s after table is created and is having data rows 
+--will not be able to take up constraints
+
+alter table Employee
+add Phoneno varchar(15) 
+
+--let us update the values for the phoneno column 
+update Employee set phoneno=null where empname ='Apurva'
+
+--adding constraints after table creation
+alter table employee
+add constraint unqphone unique (phoneno)
+
+--adding a check constraint to salary column (35000 and 50000)
+alter table employee
+add constraint chksal check(salary>=35000 and salary<=50000)
+
+insert into Employee values(109,'Nandini','Female',36000,'2022/12/12',5,'1234567')
+
+--adding a column and dropping a column
+alter table employee
+add City varchar(30) default 'Delhi'
+
+--drop a column
+alter table employee
+drop column City
+
+--let us set default constraint by adding a column
+
+insert into Employee(Empid,Empname,Gender,Salary,DOJ,Deptid,Phoneno)
+values(101,'Manya','Female',35500,'2022/12/12',5,'564567')
+
+insert into employee values(105,'Abbas','Male',36000,'2022/10/15',2,'6675586','Udaipur')
+
+--dropping a constraint
+alter table employee
+drop constraint [DF__Employee__City__29572725]
