@@ -1,1 +1,2 @@
 A new Sample file to understand the basics of git operations
+A second line of content is being added here by the TL
