@@ -1,0 +1,19 @@
+Git and Git Hub : Is an Open Source Tool for collaborations (software,piece of code)
+
+Repository : 1. Local(out m/cs), 2. Remote (server)
+
+
+step 1: create a local repo ( git init)
+step 2 : create an account for git hub
+step 3: create a remote repo
+step 4: sync both the repo's 
+(git remote add <alias name for the remote repo> remote repo address)
+
+step 5 to 7 will be repeated
+5. add the files (git add <File name> or .)
+6. commit the files(git commit -m "message")
+7. push the files to the remote repo (git push <alias name> master)
+
+8. for getting the data from the remote repo (git pull <alias name> master)
+
+

@@ -1,0 +1,63 @@
+Structured Query Lang.
+
+Database? :It can be defined as the storage of inter related data, that has been organized in such a manner that the process of retrieving data is effective and efficient
+
+DBMS : Database Management System : A set of programs to access the data.
+- An environment that is both convenient and efficient to use.
+
+Why DBMS? : Draw Backs of File System
+ - Data Redundancy and inconsistency
+ - Difficulty in accessing data
+ - Data Isolation - multiple files and formats
+ - Integrity problems
+ - Concurrency problems
+ - Security (giving access partially or fully to select few employees)
+
+Few RDBMS Databases in the market : Oracle, MSSql, Postgress, Informix, Sybase, MySql
+
+Architecture of DBMS : 3 level arch.
+1. Physical level : Binary format(1/0)
+2. Logical level : describes data stored in a database along with the relationships of the data in a table/matrix format (rows/columns)
+3. Application/View Level
+
+Data Models : A collection if tools for describing
+ - Data
+ - Data Relationships
+ - Data Semantics
+ - Data Constraints
+
+Types of Models:
+ 1. HDBMS : Hierarchial Database Management System
+ 2. NDBMS - Network Database Management System
+ 3. RDBMS : Relational Database Management System
+ 4. ORDBMS : Object Relational Database Management System (Multimedia, Hypertext based databases)
+
+RDBMS: MSSQL
+EF codd
+Chen
+Boyce
+
+The relational model stores data into tables/relations, each consisiting of rows and cols. Cols are also known as attributes. Rows have data against the cols.
+
+Imp Terms in Relational Model :
+
+ Relation - a table
+ Tuple - a row in a table
+ Attribute - a column in a table
+ Degree - number of attributes
+ Cardinality - number of tuples
+
+Entity - is anything that exists and is distinguishable
+
+Entity set - a group of similar entities
+
+Relationship - an association between entities
+  Types of Relationships :
+    1. One to One
+    2. One to many
+    3. many to many
+
+
+ Primary key -
+ Foreign key -
+ 
