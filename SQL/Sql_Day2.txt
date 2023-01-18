@@ -190,3 +190,35 @@ on e.Deptid=d.Deptid
 
 select * from employee e full outer join department d
 on e.Deptid=d.Deptid
+
+--creating a table with composite primary key
+create table emp
+(eno int ,
+prjcode int,
+hours int,
+primary key (eno,prjcode)) --composite primary key
+
+sp_help sample
+
+create table Sample
+(sampleid int,
+samplename varchar(20),
+samplelocation varchar(10))
+
+insert into sample values(null,'abc','Chennai'),(3,'pqr','pune'),(1,'xyz','kolkatta')
+
+select * from sample
+
+--creating an index (clustered)
+create clustered index idxsample on sample(sampleid)
+
+--drop an index
+drop index sample.idxsample
+
+--delete a row from a table
+
+delete from sample where samplename='AAA'
+delete from sample
+
+--creating unique clustered index
+create unique clustered index idxsample on sample(sampleid)

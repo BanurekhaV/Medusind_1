@@ -83,5 +83,18 @@ Joins :
 3. Cross Join  - cartesian product
 4. Self Join - mirror copy of the same table. 
 
-
    
+Indexes : Helps in searching data efficiently and in a faster manner
+
+2 types of indexes: 1. Clustered Index :
+                        one clustered index per table
+                        Gets created automatically on the primary key column
+                        The table gets physically sorted on every DML Operations
+
+If a table does not have a primary jey, then we can create an clustered index that acts like a primary key
+
+ 2. Non Clustered Index : Can have many non clustered indexes per table
+                          Does not physically sort the table
+                          It creates a different index table and sorts the data 
+
+
