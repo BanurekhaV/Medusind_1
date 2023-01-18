@@ -1,0 +1,42 @@
+Relational Algebra - Set theory
+
+Selection/Restriction - where
+Projection - col list
+
+Count - ignores null
+Count * - includes null
+
+sorting data  using order by
+some imp. points : 1. We can sort on multiple columns
+                   2. we can sort on an alias column
+                   3. we can sort on a column that is not in the select list
+
+
+Group by : 1. All columns apart from aggregates have to be included in the group by clause
+           2. We cannot group on an alias column 
+           3. We can group by multiple columns, provided they are included in the select list and also the columns are groupable
+
+--The order of Select query 
+
+select list of columns
+from table names
+where
+group by col name/s 
+having condition
+order by
+
+The order of execution of a select query
+
+1. from 
+2. where
+3. group by
+4. having
+5. order by
+6. select
+
+Differences between where clause and having clause
+
+Where								Having
+- is applied on individual rows			is applied on individual groups
+- restricts no. of rows					restricts number of groups
+- executed before formation of groups		executed after formation of groups

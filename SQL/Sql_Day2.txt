@@ -1,0 +1,135 @@
+use MedusindDB
+
+sp_help employee
+
+--disabling and enabling check constraints
+alter table employee nocheck constraint chksal
+
+alter table employee check constraint chksal
+
+insert into employee values(107,'Mayank','Male',36500,'2022/02/21',1,65667788)
+
+update employee set salary=37000 , deptid=3 where empid=106
+--select clauses
+--* means all rows
+--where is a predicate that restricts the no of rows to be displayed
+--Projection
+select * from employee
+select * from employee where empid=106
+select empid,empname,Salary from employee
+--aliases in select clause
+select empid as 'EmployeeNumber',empname 'Employee Name',Salary from employee
+
+--top records
+select top 3 * from employee
+select top 2 percent * from employee
+select top 10 percent Empid,Salary from employee
+select top 5 empname from Employee
+
+--Relational Operators (>,<,=,<>,!=,<=,>=)
+--Logical Operators (and, not, or)
+select Empname,salary,Deptid from employee where salary<>36000
+select Empname,salary,Deptid from employee where salary=36000
+
+--list of employees who are earning greater than or equal 35000 and doj between nov 22 and jan 23
+select * from employee where salary >=35000 and doj between '2022/11/01' and '2023/01/31'
+select * from employee where salary >=36000 or doj not between '2022/11/01' and '2023/01/31'
+
+--null values checking
+select * from employee where deptid is null
+select * from employee where deptid is not null
+
+--in operator (that works like an or)
+--list all employees who work for dept 1 or 2
+select * from employee where deptid=1 or deptid=2 -- or use in as below
+select * from employee where deptid in(1,2)
+--negative in operator
+select * from employee where deptid not in(1,2)
+
+--Arithmetic operators in select clause (+,-,/,*,%)
+select empname as 'Name of the Employee', (salary*12) as 'Annual salary' from employee
+select Salary as 'Current Salary', salary+1000 as 'New Salary' from employee
+
+--Like operator
+--wild card characters 
+/* % percentile (substitution of zero, one or more characters)
+_ underscore (substitution of exactly any one character)
+[] - range (search for any single character within the specified range)
+^ - negative  (search for any single character that is not the specified character)*/
+--list of all employees whose name starts with A
+select * from employee where empname like 'A%'
+
+select * from employee where empname like '%A'
+select * from employee where empname like '_A%'
+
+select * from employee where empname like '___t'
+
+--bracket
+select * from employee where Empname like '[MNK]%a'
+select * from employee where Empname like '_[^me]%'
+--Aggregate functions (min,max,sum,avg,count)
+select max(salary) from employee
+select min(salary) from employee
+select avg(salary) from employee
+select sum(salary) as 'Total Salary' from employee
+
+select count(deptid) from employee -- excludes null
+
+select count (*) deptid from employee --includes null
+
+select distinct(deptid) from employee -- avoids duplicates, but includes a null
+
+--average salary drawn by employees of dept 2
+select avg(salary) 'Average Salary'from employee where deptid=2
+
+--Functions cannot be used in the RHS of where clause
+--list of employees who earn more than the average of all employees
+select * from employee where salary >avg(salary) -- wrongly formatted query
+
+--Sorting data
+--order by (ascending asc or descending desc)
+select * from employee order by empname desc
+--1. multiple column sort
+select * from employee order by empname desc,salary -- no changes in data
+-- list salaries of employees in desc order within department
+select * from employee order by deptid ,salary desc
+--alias name sorting
+select deptid as DepartmentNumber, empname, Salary as 'Employee Salary'
+from employee
+order by DepartmentNumber, 'Employee Salary' desc
+--sorting on column not in the select list
+select Empname, Gender from employee order by deptid,salary desc
+
+select * from employee where deptid is not null 
+order by deptid, salary desc
+
+--group by clause
+--return department wise maximum salary
+select deptid as departmentid, max(salary)from employee
+group by deptid
+
+select empid,deptid, max(salary)from employee
+group by Deptid,empid  -- query that does not give out expected output
+
+--list no. of males and females in employee table
+select gender,count(gender) from employee 
+group by gender
+
+--list no. of males and females in dept 4
+select gender, count(gender) from employee where deptid=4
+group by gender order by gender desc
+
+--department wise min salary which are >= 35500
+select deptid, min(salary) from employee
+where deptid is not null
+group by deptid
+having min(salary)>=35500
+
+select deptid, avg(salary),min(salary) from employee
+where deptid is not null
+group by deptid
+having avg(salary)>=35500
+
+select deptid, avg(salary)as Average,min(salary) as Minimum, 
+max(salary)as Maximum, sum(salary)as Total from employee
+group by deptid
