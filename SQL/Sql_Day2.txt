@@ -133,3 +133,60 @@ having avg(salary)>=35500
 select deptid, avg(salary)as Average,min(salary) as Minimum, 
 max(salary)as Maximum, sum(salary)as Total from employee
 group by deptid
+
+
+--Joins
+
+--return department name wise maximum salary
+select deptname as 'Department Name', max(salary)as 'Highest salary'
+from employee, Department
+where Department.Deptid=Employee.Deptid
+group by deptname
+
+insert into Department values(6,'Operations','Bangalore')
+select * from Department
+
+--inner join example
+select department.deptname as 'Department Name', max(salary)as 'Highest salary'
+from employee inner join Department on
+ Department.Deptid=Employee.Deptid
+group by deptname
+ 
+ --joins with alias names to tables
+ select e.Empname,e.Salary,d.Deptname from
+ employee e inner join Department d on
+ e.Deptid=d.Deptid
+
+select d1.deptname as 'Department Name', max(salary)as 'Highest salary'
+from employee e1 inner join Department d1 on
+ d1.Deptid=e1.Deptid
+group by deptname
+
+--cross join
+select * from employee,department
+
+select * from employee cross join department
+
+--Self Join (a table joining with itself. It requires an alias name)
+select e1.Empname as EmployeeName, e2.Empname as ManagerName
+from Employee e1 inner join employee e2
+on e1.empid=e2.managerid
+
+--Outer Joins
+select * from employee e left join department d
+on e.Deptid=d.Deptid
+
+select * from employee e left outer join department d
+on e.Deptid=d.Deptid
+
+select * from employee e right  join department d
+on e.Deptid=d.Deptid
+
+select * from employee e right outer join department d
+on e.Deptid=d.Deptid
+
+select * from employee e full join department d
+on e.Deptid=d.Deptid
+
+select * from employee e full outer join department d
+on e.Deptid=d.Deptid

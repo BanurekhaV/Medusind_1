@@ -40,3 +40,48 @@ Where								Having
 - is applied on individual rows			is applied on individual groups
 - restricts no. of rows					restricts number of groups
 - executed before formation of groups		executed after formation of groups
+
+Composite Primary Key : Is a primary key of a relation that is made up of more than 1 attribute
+
+
+Normalization :
+- Decomposing a larger complex table into several simpler ones
+- Moving from lower normal forms to higher normal forms (1 NF, 2nd NF, 3rd NF)
+- Uses a technique called as Functional Dependency
+
+Why Normalization ? : Redundancy is the root cause for several problems associated with the relational schemas
+- Redundancy causes anomalies : insert, updation, deletion
+- Wastage of storage
+
+1NF :
+A table is said to be in 1NF, when every row contains exactly one value for each attribute.
+Disallow multivalued attributes, composite attributes and their combinations
+
+2NF :
+
+A relation is in the 2nd NF when it is already in 1NF and every non- prime attribute is fully 
+functionally dependent on the primary key or composite key
+2NF prohibits partial dependencies
+
+3NF : Relation is already in 2NF, and no non prime attribute is transitively dependent on the primary key
+  (No Indirect dependecies on the primary key by the non prime attributes. They should be only directly 
+dependent).
+
+
+Example :
+
+Emp {Eno, Dept}
+Dept {Dept,DeptHead}
+Project {Eno,Prjcode,Hours}
+
+Joins : 
+1. Equi join/Natural Join/Inner Join  - Only matching rows from both tables
+2. Outer Join  matching rows plus non matching rows from ...
+    - Left Outer     - left table
+    - Right Outer   - right table
+    - Full outer    - both tables
+3. Cross Join  - cartesian product
+4. Self Join - mirror copy of the same table. 
+
+
+   
