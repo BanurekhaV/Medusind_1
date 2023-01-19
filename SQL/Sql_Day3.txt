@@ -46,3 +46,126 @@ rollback  -- or
 commit
 
 truncate table sample
+
+--Transaction Example 1: all dml getting rolled back
+begin transaction
+delete from employee where empid=98
+select * from employee
+save tran s1
+update employee set deptid=1 where empid=100
+select * from employee
+save transaction s2
+insert into sample values('Sample1','Location1')
+select * from sample
+save tran s3
+update Department set DeptLocation='Pune' where deptid=1
+select * from Department
+rollback
+
+--2 nd instance : dml getting rolled back partially till s3
+--Transaction Example 2: balance dml operations are comitted
+begin transaction
+delete from employee where empid=98
+select * from employee
+save tran s1
+update employee set deptid=1 where empid=100
+select * from employee
+save transaction s2
+insert into sample values('Sample1','Location1')
+select * from sample
+save tran s3
+update Department set DeptLocation='Pune' where deptid=1
+select * from Department
+rollback tran s3
+commit
+
+
+
+select * from employee
+
+--TSql
+/* Begin
+declare variables
+assign values to variables
+if/else
+loop
+call
+print
+end */
+
+--eg 1:
+begin
+  declare @v1 int=0, @v2 int=0, @sum int
+  set @v1=5
+  set @v2=10
+  set @sum=@v1+@v2
+  print @sum
+  select @sum
+ end
+
+ --eg 2:
+ 
+  declare @var1 int
+  declare @var2 int
+  select @var1=100
+  select @var2=40
+  begin
+    if(@var1 > @var2)
+	 print 'Var1 is greater than Var2'
+	else
+	 print 'Var 2 is greater'
+  end 
+
+  --eg 3:
+  begin
+   declare @sal float
+   declare @name varchar(20)
+   --fetch the salary and empname data from the table and store it in the varibales
+   select @name=empname,@sal=salary from employee where empid=98
+   print @name
+   print @sal
+   print 'Employee name is :' + @name
+   print 'Employee Salary is :' + cast(@sal as varchar(10))
+   end
+
+   --eg 3: 
+    begin
+   declare @esal float
+   declare @ename varchar(20)
+   --fetch the salary and empname data from the table and store it in the varibales
+   select @ename=empname,@esal=salary from employee where empid=98
+   print @ename
+   print @esal
+   print 'Employee name is :' + @ename
+   print 'Employee Salary is :' + cast(@esal as varchar(10))
+   if(@esal<=37200)
+     begin
+	   set @esal=@esal+3000
+	   print 'Revised Salary of the Employee '+@ename + ' is :' + cast(@esal as varchar(7))
+     end
+    else
+	 begin
+	  set @esal=@esal+1000
+	  print ' Salary seems OK'
+     end
+   end
+
+   --eg 4: loops
+   declare @ctr int=1
+   while @ctr<=10
+   begin
+     print @ctr
+     set @ctr=@ctr+1	 
+   end
+
+   --eg 5: break/continue
+   declare @ctr1 int=0
+   while @ctr1<=10
+   begin
+      set @ctr1=@ctr1+1	 
+	  if @ctr1=5 continue
+	  print @ctr1
+
+	  if @ctr1=8 break
+   end
+   end

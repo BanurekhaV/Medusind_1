@@ -60,3 +60,14 @@ Transaction mamanegement ensures
 Save Transactions : Are logical blocks/markers of a set of operations in a transaction
                     It is not an ANSI standard SQL
         
+
+Transact Sql (T-SQL)
+    - Ability of the database to help in writing small/ medium functionalities(coding)
+    - If else
+    - case
+    - Loops
+    - Exceptions
+
+- Variables : are of 2 types
+  1. Local Variable - @
+  2. Global Variable - @@
