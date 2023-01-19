@@ -1,0 +1,62 @@
+Identity Columns : Are applied to numeric data types. Does not allow data entry into the identity column, instead
+will automatically genererate a sequence and enters the data
+
+
+table 1
+  col1 dt1 not null 
+  col2 dt2 null 
+  col3 dt3  not null
+  col4 dt4 default 'aaa'
+
+inserrt into table 1 values(c1,null,c3)
+
+insert into table 1(col1,col3) values(c1,c3)
+
+c1    null    c3    aaa
+
+
+
+Delete                      vs                                Truncate
+
+DMLCommand (retains the last identity value)		DDL Command (not able to retain the last generated identity value)
+We can restrict no.of rows to be deleted			Cannot restrict no of rows to be deleted
+It is slower than truncate						It is faster
+We can retrieve the deleted rows using rollback		Cannot be rolled back
+
+
+Transactions : A smallest unit of work managed with the help of ACID properties
+
+A - Atomicity - (all statements inside a transaction should either succeed or fail as a unit
+C - Consistency - (Either the changes are reflected in the database or no changes are reflected)   
+I - Isolation - (Eg/ until the  First Transaction either commits or rollsback, the second transaction cannot perform any dml, only selection is possible)
+D - Durability - (safeguarding the committed data)
+
+Transaction Modes:
+
+1. Auto-commit Transaction : Is a default mode, that evaluates every statement as a transaction and commits if succesfull or rollback if unsuccessful (permissions, object names, syntax)
+
+2. Implicit Transaction : SQL server will begin the transaction internally and wait for either a commit or rollback 
+       set implicit_transactions on|off
+3. Explicit Transacations : We have to define the starting and ending points of the transactions
+
+   Begin Transaction
+     sql statements 1
+    "   "      "   2
+    "     "     "  3
+   Commit | Rollback   (end of the transaction)
+
+Note : A transaction begins when the first DML statement is executed
+       Ends with one of the following
+         - A commit or rollback
+         - A DDL or a DCL statement is executed(auto commit)
+         - The user exits
+         - The System Crashes
+
+Transaction mamanegement ensures
+  - Data Consistency
+  - Preview data changes before making the changes permanent
+  - Group logically related operations into one unit
+
+Save Transactions : Are logical blocks/markers of a set of operations in a transaction
+                    It is not an ANSI standard SQL
+        

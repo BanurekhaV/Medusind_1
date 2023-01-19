@@ -1,0 +1,48 @@
+use MedusindDB
+
+sp_help employee
+select * from sample
+--insert into sample values(3,'bbb','zzz')
+
+select * from employee where empname like '_a%'
+
+drop index sample.idxsample
+
+select * from sample where samplename ='aaa'
+
+drop index employee.idxename
+
+create nonclustered index idxename on employee(empname)
+
+delete from employee where empid=99
+create unique nonclustered index idxename on employee(empname)
+
+insert into employee (empid,empname,gender,salary,doj,Phoneno)
+values(99,'Murali','Male',37200,'2022/06/06',4645511)
+
+create nonclustered index idxdoj on employee(DOJ)
+select * from employee where DOJ between '2022/08/01' and '2023/01/15'
+
+drop index employee.[PK__Employee__AF2EBFA1015B442C]
+
+--dropping a table
+drop table sample
+
+create table sample(sampleid int identity,
+samplename varchar(10),
+samplelocation varchar(10))
+
+insert into sample values('i','j'),('g','h')
+select * from sample
+delete from sample where sampleid=2
+
+truncate table sample
+
+--to set the implicit transaction mode to on or off
+
+set implicit_transactions on
+delete from sample 
+rollback  -- or
+commit
+
+truncate table sample

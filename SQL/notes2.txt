@@ -86,15 +86,42 @@ Joins :
    
 Indexes : Helps in searching data efficiently and in a faster manner
 
-2 types of indexes: 1. Clustered Index :
+2 types of indexes: 1.  Clustered Index :
                         one clustered index per table
                         Gets created automatically on the primary key column
                         The table gets physically sorted on every DML Operations
 
-If a table does not have a primary jey, then we can create an clustered index that acts like a primary key
+- we can create a.:Simple clusterd Index (allows duplicates, null values and sorts the data physically)
+                b: Unique Clustered Index (does not allow duplicates, allows one null, sorts the data physically)
+
+If a table does not have a primary key, then we can create an clustered index that acts like a primary key
 
  2. Non Clustered Index : Can have many non clustered indexes per table
                           Does not physically sort the table
                           It creates a different index table and sorts the data 
+
+we can create both Simple nonclustered index or unique nonclustered index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
