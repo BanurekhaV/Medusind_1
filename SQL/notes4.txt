@@ -7,3 +7,30 @@ Benefits : Security
 
 The view expression is substituted into a query and executed by the Sql engine
 
+Stored Procedure: stored set of valid sql statements
+                  provides reusability
+                  Stores the query execution plan along with the statements
+
+
+
+Syntax: create procedure <procedure name>
+     as
+      begin
+       dml/dql statements
+       transactions
+       error handlers
+       end
+-- Can take input parameters
+   Can give output parameters
+   Always returns an integer
+
+int add(int a, int b)
+
+
+
+
+
+
+
+
+

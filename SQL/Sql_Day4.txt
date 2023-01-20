@@ -59,3 +59,82 @@ insert into vwtest values(200,'Banurekha',36000,'9999999') -- insertion success
 update vwtest set phoneno='123456789' where empid=200
 
 delete from vwtest where empid=200
+
+--Procedures
+create procedure MyProc1
+as 
+begin
+ select * from employee
+ end
+
+ --to excecute the procedure
+ exec MyProc1
+
+ --eg 2: 
+ create or alter proc MyProc2
+ as
+ begin
+  print 'Hello World'
+  select * from employee where deptid in(1,2,4)
+  end
+
+  exec MyProc2
+
+  --eg 3 Input Parameter
+ create or alter proc getEmployeeById @eid int
+  as
+  begin
+  select * from employee where empid=@eid
+  end
+
+  execute getEmployeeById 104 
+
+  --eg 4: 
+  create or alter proc getEmpByName @ename varchar(20)
+  as
+  begin
+  select salary from employee where empname=@ename
+  end
+
+  exec getEmpByName 'Amit'
+
+  --eg 5:
+  create proc getSalaryByName @ename varchar(20)  -- input variables
+  as
+  begin
+  declare @esal float  -- local variable
+  select @esal=salary from employee where empname=@ename
+  if(@esal <38000)
+   begin
+    update employee set salary =@esal+100 where empname=@ename
+	select * from employee where empname=@ename
+  end
+  end
+  
+  exec getSalaryByName 'BH Vignesh'
+
+  --eg output parameter
+  create or alter proc getEmpSal(@eid int, @sal float output)
+  as
+  begin
+  select @sal=salary from employee where empid=@eid
+  set @sal=@sal+500
+  end
+ 
+ --to execute procedures with input and output parameters
+  -- 1st way of executing
+  declare @outsal float
+  exec getEmpSal 99, @outsal output -- standard way of calling proc
+  print @outsal
+  set @outsal=@outsal+100
+  update employee set salary = @outsal where empid=99
+
+  select * from employee where empid=107
+
+  --2nd way of executing by changing the order of parameter
+  declare @sal1 float
+  exec getEmpSal @sal=@sal1 output, @eid=107 
+  print @sal1
+
+  
+
