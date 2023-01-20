@@ -1,0 +1,9 @@
+Views : Virtual Tables that contain only the view definition (query expression) and not the data
+        
+Benefits : Security
+           Hiding some sensitive information
+           Easier access to few columns from various tables in a repeated query
+           Executing a View like a table
+
+The view expression is substituted into a query and executed by the Sql engine
+

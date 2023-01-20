@@ -1,0 +1,61 @@
+select * from employee
+
+--views
+--Eg 1: IT Employees
+alter view vWITEmployees
+as select Empid,Empname,Salary,Gender,Deptname from
+employee join Department on Employee.Deptid=Department.Deptid
+where Department.DeptName='IT'
+
+--eg 2: Employee by Department
+drop view vWEmpByDept
+
+create or alter view vWEmpByDept
+as select Empid,Empname,Salary,Gender,employee.Deptid, Deptname from
+employee join Department on Employee.Deptid=Department.Deptid
+
+sp_helptext vWITEmployees
+
+select * from vWITEmployees
+select * from vWEmpByDept
+
+insert into vWEmpByDept values(200,'Banurekha',36000,'Female','IT') -- not possible to 
+-- insert data through a view made of more than 1 table
+
+
+select * from Department
+select * from employee
+
+--to ensure permanent changes to be made to the base tables or not we can
+--use transaction modes as below
+--1. Explicit Transaction mode
+begin tran
+update vWEmpByDept set deptname='Sales' where empid=103 -- update resulted in a chaotic data
+select * from Department
+select * from vWEmpByDept
+rollback
+
+--2. Implicit transaction mode
+set implicit_transactions on
+update vWEmpByDept set deptname='Sales' where empid=103 -- update resulted in a chaotic data
+select * from Department
+select * from vWEmpByDept
+rollback
+--in order to effect the below query of updation we can do changes as below
+--1. Drop the unique index on empname
+--2. change the dept id of the employee
+update employee set deptid=6 where empid=98
+
+update vWEmpByDept set empname='BH Vignesh' where deptid=6 -- update is successful
+
+create or alter view vwtest
+as select Empid,Empname,Salary,Phoneno from employee
+
+select * from vwtest
+select * from employee
+
+insert into vwtest values(200,'Banurekha',36000,'9999999') -- insertion success
+
+update vwtest set phoneno='123456789' where empid=200
+
+delete from vwtest where empid=200
