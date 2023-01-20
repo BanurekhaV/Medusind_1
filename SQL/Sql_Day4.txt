@@ -137,4 +137,149 @@ begin
   print @sal1
 
   
+--procedures with return type
 
+  create or alter proc GetEmpId(@empname varchar(15))
+  as
+  begin
+  return (select --empid/phoneno/
+  gender from employee where empname=@empname)
+  end
+  --to execute procedure that returns emp id - an int datatype
+  declare @employeeid int
+  exec @employeeid=GetEmpId 'Jeet'
+  select @employeeid
+
+  --to execute procedure that returns phone number - an varchar with digits
+  --hence it is returnable
+
+  declare @phone varchar(20)
+  exec @phone=GetEmpId 'Jeet'
+  print @phone
+
+  --to execute procedure that returns gender - a varchar datatype that is not possible
+  declare @gender varchar(10)
+  exec @gender=GetEmpId 'Jeet'
+  print @gender
+
+  --eg 7:
+  --to get total no of employees
+  create or alter proc getNoOfEmployees
+  as
+  begin
+  --return (select count(*) empid from employee) 
+  return (select max(salary) from employee)
+  --return 100
+  end
+
+  declare @totemp int
+  exec @totemp=getNoOfEmployees
+  print @totemp
+
+  --exercise
+  --1. write a procedure to greet the user as "welcome to SQL'
+  --2. write a procedure that takes empid as an input and displays the name of the department
+  --he/she works for
+  --3. Write a procedure that takes the name of the employee and returns the deptid
+
+ create or alter proc getempidex @eid int
+as
+begin
+select deptname from department  join employee on department.deptid=employee.Deptid
+and employee.empid=@eid
+end
+  
+  exec getempidex 104
+  
+  --rename a table
+  exec sp_rename 'NewEmployee','Employee'
+
+  --rename a column
+  exec sp_rename 'Employee.Sex','Gender'
+  
+
+  --converting date formats for display
+  declare @dt datetime
+  set @dt=getdate()
+  select @dt
+  select convert(varchar,@dt,1)as[MM/DD/YY]
+
+--procedure to insert records into employee table
+  create or alter proc empinsertdata(@empid int,@enm varchar(20),@gen varchar(10),@empsal float,
+  @edoj date, @edid int, @ephone varchar(15))
+  as
+  begin
+  insert into employee values(@empid,@enm,@gen,@empsal,@edoj,@edid,@ephone)
+  end
+
+  exec empinsertdata 200,'Banurekha','Female',36000,'2022/10/15',6,'007'
+
+  select * from employee
+
+  --procedure for deleting an employee record
+  create or alter proc empdelete @empno int
+  as
+  begin
+  delete from employee where empid=@empno
+  select * from employee
+  end
+
+  exec empdelete 200
+
+  --Functions
+  --eg 1:scalar function
+  create function Add2Nos(@a int, @b int)
+  returns int   -- informing the engine the type of return data
+  as
+  begin
+   return @a + @b  -- actually returning the data
+  end
+
+  --functions can be executed in select clause 
+  --use 2 part qualification
+
+  select dbo.Add2Nos(10,20) as 'Sum of 2 Nos'
+
+  --eg 2 function without input parameter, and returns varchar
+  create or alter function display()
+  returns varchar(max)
+  as
+  begin
+   return 'Hello All!! Welcome to SQL Functions'
+   end
+
+
+   select dbo.display()
+
+   --eg 3: function that returns data from a table
+   create function fngetdept(@did int)
+   returns varchar(20)
+   as
+   begin
+   return (select deptname from Department where deptid=@did)
+   end
+
+   select dbo.fngetdept(6)
+
+   --exercise
+   --create a function to find the area of a rectangle
+
+   create function area(@l int, @b int)
+   returns int
+   as
+   begin
+   declare @area int 
+   set @area=@l *@b
+   return @area
+   end
+
+   select dbo.area(2,5) as 'Area of Rectangle'
+--table valued functions - that returns a table(cols, rows)
+create or alter function fntablevalued(@depid int)
+returns table
+as
+
+ return (select * from employee where deptid=@depid)
+  
+  --to execute the above table valued function, type as below
+  select * from dbo.fntablevalued(1)

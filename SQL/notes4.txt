@@ -27,6 +27,18 @@ Syntax: create procedure <procedure name>
 int add(int a, int b)
 
 
+Functions : stored sql statements, that can be reused
+,
+1. A function must return a value whereas a procedure need not 
+2. A procedure can have both input and output parameters, where as functions have only input parameters
+3. In procedures, we can perform select, insert,delete, update operations, wherea s functions can be used only for select command operations. Cannot be used for data manipulation in the table
+4. A procedure provides the options for transaction management, error handling etc, but in functions , we cannot
+5. We call aprocedure using Execute/Exec command where as function is called using select command
+6. From a procedure, we can call other procedures, and functions, but from a function, we can only call other functions
+7. UDF can be used in select/having clauses, but procedures cannot be used
+
+Table valued Functions : Unlike Scalar Functions, Returns more data with the return type marked as table 
+                         Does not allow Begin and  end clause
 
 
 
