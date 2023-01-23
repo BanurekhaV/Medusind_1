@@ -1,0 +1,102 @@
+use MedusindDB
+
+--Triggers
+--eg 1 basic triggers
+create or alter trigger trg_InsertEmp
+on Employee
+for Insert
+as
+begin
+ select * from inserted  -- to show the magic tables having the data
+ select * from employee
+end
+
+--the execution of the above trigger happens automatically whenever we insert a record/s into
+-- the employee table on which the trigger is created
+insert into employee values(201,'Rekha','Female',36000,'2020/01/05',6,'655555')
+
+--eg 2
+create trigger trg_updateEmp
+on employee
+for update
+as
+begin
+  select * from deleted
+  select * from inserted
+end
+
+update employee set salary=45000 where empid=200
+
+--eg - triggers that log the details
+--first let us create an audit table to have the log details
+create table EmpAudit
+(msg nvarchar(max))
+
+--1. let us write an insert trigger on employee to log the details
+--drop trigger trg_AuditLog
+create or alter trigger trg_AuditLogInsert
+on employee
+for insert
+as
+begin
+ declare @id int
+ select @id=empid from inserted
+ insert into EmpAudit values('New Employee with EmpId: ' + cast(@id as nvarchar(10)) +
+ ' is added at :' + cast(getdate() as nvarchar(20)))
+end
+
+-- 2. same as above, we shall write one delete trigger
+create or alter trigger trg_AuditLogDelete
+on employee
+for delete
+as
+begin
+ declare @id int
+ select @id=empid from deleted
+ insert into EmpAudit values('An Existing Employee with EmpId: ' + cast(@id as nvarchar(10)) +
+ ' is deleted at :' + cast(getdate() as nvarchar(20)))
+end
+
+insert into employee values(300,'Mahesh','Male',40000,'2020/11/11',5,99887766)
+
+select * from employee
+select * from EmpAudit
+
+delete from employee where empid=300
+
+--Instead of Triggers
+--lets us understand instead of triggers (are fired instead of the actual DML Operations)
+--so lets create a view to understand instead of triggers
+create or alter view vWEmployeeDetails
+as
+select empid,empname,salary,phoneno,department.DeptName from employee join department on
+employee.Deptid=Department.Deptid
+
+--if we try to insert a record through the above view we get an error of multiple base tables
+select * from vWEmployeeDetails
+
+insert into vWEmployeeDetails values(12,'Testdata2',50000,'000003','Testing')
+select * from Department
+--How to overcome the problem ?
+drop trigger trg_vWemployeeDetails_InsteadOf
+create trigger trg_vWemployeeDetails_InsteadOf
+on vWEmployeeDetails
+instead of insert
+as
+begin
+ declare @departmentid int
+ --first let us check if there is a valid department in the department table 
+ -- for a given department name
+ select @departmentid=Department.deptid from department join inserted i on 
+ i.deptname=Department.deptname
+ --if departmentid is null, then throw an error
+ if(@departmentid is null)
+  begin
+   Raiserror('Inavlid Department. statement terminated', 16,1)
+   return
+  end
+
+  --finally if everything is ok, then let us insert into employee table
+  insert into employee(Empid,Empname,Salary,Phoneno,deptid)
+  select Empid,Empname,Salary,phoneno,@departmentid from inserted
+ end

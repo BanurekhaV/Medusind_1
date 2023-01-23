@@ -1,0 +1,91 @@
+Triggers : Are stored sql statements that gets fired automatically on an DML Event of the table
+
+Are of 2 types : DML, DDL
+
+DML: 
+
+Write Ahead Memory ( dml)
+insert into tabl1 1 values(, , , , , )
+select * from table 1  - find the inserted data
+rollback
+select * from table 1- no data
+
+Magic tables : A memory tables created during the DML operations that are accessible within the body of the trigger and not outside
+
+inserted table : a new record gets inserted in the inserted table
+deleted table : the record that is being deleted is copied onto the deleted table
+
+update action : a delete followed by an insert
+
+Syntax: create trigger <triggername> 
+on <tablename>
+for <insert/update/delete
+as
+begin
+sql statements
+end
+
+--Insertion
+1. insert into table values()
+   insert into table values()
+
+
+2. insert into table values(),(),()
+
+3. --Bulk Insert : insert into table1 .. select column list from other table2
+insert into .... select
+  (copying multiple rows from one table into another - provided all table structures of both the table matches in terms of the selected columns and the datatypes)
+
+
+DDL Triggers  are gaian of 2 types
+  1. Database Scopped Triggers - applied for a database
+  2. Server Scopped Triggers - applicable on all databases of the server
+
+
+SSRS : SQL Server Reporting Services which is a software that allows us to produce formatted reports in the form of data,graph,images and charts. These reports are hosted on a server that can be executed any time. It is a part of Microsofts Services Suits
+
+Why SSRS?
+ SSRS is a tool comapared to crystal reports
+ Faster processing of repoirts on both relational amd multidimensional data
+ Allows better decision making
+ It provides a World wide web-based connection for deploying reports. Hence the reports can be accessed over the internet
+ SSRS allows reports to be exported in different formats. We can deliver reports using emails.
+
+What is RDL? : Report Definition Language. It describes all the elements of a report using XML grammar, which is validated using xml schema
+
+
+Steps for SSRS :
+1. Download and install SQL Server
+2. Download and install Server Management Studio
+3. Install Sql Server Reporting Services
+    web address - https://www.microsoft.com/en-us/download/details.aspx?id=100122
+  download and then install
+4. Configure SSRS
+     
+      After installation, go to report server configuaration manager and follow the      below steps
+     1. WebService URL - apply
+     2. Database - >Change Database -> Give a name(eg. Myreportserver), give authentication type (windows/service credentials) -> click next->next->finish
+     3. WebPortal URL -> Apply
+Note :Virtual Directory gets created and an URL is mapped to access the reports or create new reports or upload existing reports from a browser
+
+Click the url and see the browser launch of creating or using existing reports
+
+5. Connect to the SSRS and register a Report Server
+    1. Go to SQL management studio -> click view-> registered server
+    2. Select Reporting Services Icon -> Find Local Server Groups-> right click and select new server registration->select ther servername->click test and wait for sometime->save and come out
+
+Now in the SSMS - you will see 2 panes on the left (you can connect to reporting services or database services from the second pane)
+
+6. Install Report Builder 
+
+    download and install ms report builder (https://www.microsoft.com/en-us/download/details.aspx?id=53613 )
+   1. Launch the report builder app
+   2. Create Datasource
+   3. Create Dataset
+   4. Select requuired fields, aggregates from query designer options
+       You can format the report
+   5. Save the Report as an . RDL file
+   6. You can upload the .rdl file from the URL (Report Configuration Manager)
+7. Create and publish your reports
+ 
+
