@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Day2CSharpPrj.OtherEg</StartupObject>
+    <StartupObject>Day2CSharpPrj.TestMethodsnParameters</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatatypeEg.cs" />
+    <Compile Include="MethodsnParameters.cs" />
     <Compile Include="OtherEg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -34,3 +34,75 @@ Function Signature : the return type, the function name, the argument list, and 
  Implicit : When a reference type is converted to another reference type
    
 
+Nullable Types (making any value type a nullable using ?)
+Null coalescing operator (??) used as ternary operator
+
+Class Methods and Instance Methods 
+ Class Methods are methods that don't need an instance of the class to be invoked.  (static)
+ Instance Methods are methods that need an instance of the class to be invoked (public)
+
+Programming Constructs :
+
+1. If - elseif  - else :
+2. Switch case :
+
+Eg:
+declare  char grade;
+accept grade ;
+if grade=='O' and totmarks >95 then 'outstanding'
+else if grade=='O' and totmarks <=95 and totmarks >=94, then 'excellent'
+
+else
+'invalid grade'
+
+switch(grade)
+ case 'O': 'outstanding'
+            break;
+ case 'A': 'Excellent'
+            break;
+
+ default : 'invalid'
+end switch
+
+Iterations : initialization, condition, change of initial value (increment or decrement)
+Loops : 1. do while loop  - statements are executed once, then condition is checked (if true loops, else comes out of loop)
+        2. while do loop  - First check the condition (only if true execute statements, else come out)
+        3. for loop       - compact loop  
+        4. foreach loop   - used for collections, where only initialization is done, and condition checking and incrementing is automatic
+
+ Jump Statements :
+       break
+       continue
+       goto
+       return
+       throw
+
+Arrays : is a collection of values of same datatype
+  There are 3 types of Array 1: Single Dimensional, 2. Two Dimensional/Multi, 3. Jagged 
+Array Instantiation:
+
+   Datatype[] <ArrayName>= new datatype[size]
+eg : int[] a= new int[5]
+     string[] arr= new string[3]
+
+int[]data= new int[5]{1,2,3,4,5}; 5 and the index will be 4 (0-4)
+int[]data1 = new int[]={1,2,3,4,5,6,7};7  and index will be 6 (0-6)
+
+data[0]=2;
+data[1]=4; 
+
+for(int i=0; i<20;i++)
+{
+  cw("enter values for the array");
+  data[i]=Convert.ToInt32(Console.ReadLine());
+}
+
+Jagged Array : is also known as array of arrays
+               an element of a jagged array itself is an array
+
+Methods and Parameters :
+
+1. Value    -- call by value 
+2. Reference
+3. Out
+4. Parameter Arrays
