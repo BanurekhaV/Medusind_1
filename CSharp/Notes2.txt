@@ -1,0 +1,36 @@
+Data Types : 1. Primitive (char, int,float,double, bool,short,long,byte)
+
+2. Userdefined Types: Arrays,Class,Interface,Events,Delegates
+
+Value Types : 
+Reference Types :
+
+
+int   -- integer
+char  -- character
+
+a++,a--,a**  = a=a+1 - unary operator (have only one operand)
+
+a+b   = Binary operator (2 operands)
+
+     ternary operator (exprs,a:b)
+
+Data Type conversions:
+
+1. Implicit : Lower datatype can be converted to a higher datatype -- automatically by the compiler
+2. Explicit : Higher Datatype to Lower Datatype (may/can result in data loss) --
+
+ Primitive Datatypes
+
+Function Signature : the return type, the function name, the argument list, and the argument type
+
+
+ Boxing and Unboxing : 
+------------------------
+ Boxing :when we try to convert value type to reference type
+
+ Unboxing : when we try to convert the reference type to value type
+
+ Implicit : When a reference type is converted to another reference type
+   
+
