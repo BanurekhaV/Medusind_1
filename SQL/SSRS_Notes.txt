@@ -89,3 +89,13 @@ Now in the SSMS - you will see 2 panes on the left (you can connect to reporting
 7. Create and publish your reports
  
 
+SQL Jobs and Schedules: A task is known as a job, and it can be scheduled to run at a specific time, either once or on a regular basis.
+
+Jobs can be scheduled to run basis GUI or a script
+ To schedule a job :
+  1. Ensure the SQL Server Agent services are running either by
+      a : SSMS->SQL Server Agent-> Right click->start
+      b : type services.msc on the Run app and go to Microsoft SQL Server Agent->right click on the status column and start
+  2. Prepare a Query
+  3. Create a Job, schedule it and run the job
+

@@ -1,0 +1,46 @@
+.Net is the Microsoft Web Services startegy to connect information,people,systems and devices through a software
+- Is a platform that provides a standardised set of services
+   - Data Access and connectivity
+   - User Interface (winforms, WPF)
+   - Web Applications (ASP.net, Silverlight)
+   - Network Communication(WCF - Win Comm. Framework) 
+   - WorkFlow - WWF(Win Workflow Framework)
+
+
+FCL - Web  - 
+      Windows
+      Data
+      Xml
+      System
+
+Points to remember :
+IL(intermediate Lang.) is also called as MSIL,CIL or Managed Code
+Assemblies get created on compiling a source code. 
+Assemblies are of 2 types(.exe or .dll) depending on the type of application
+Source code ---Compiles --- IL\
+IL -- compiles on JIT (Just in Time)Compilation--Platform specific native code
+
+What is an Assembly ?
+
+
+- They are fundamental unit of deployment, version control,reuse and security of a ,net application
+- They contain PE Header(portable executable), CLR header, Manifest File and IL
+- Manifest files contain MetaData (data about Data)
+- Assemblies can be private or shared
+- Shared assemblies are placed in GAC (Global Assembly Cache)
+
+Tools(.exe file) that help in manipulating assembly file and reassembling the IL
+
+   ILDASM (IL disassembler)
+   ILASM (IL assembler)
+
+Namespace - It is a logical way to organize our programs
+          - It helps avoid name clashes
+          - It is a collection of Classes, Interfaces, Events, Delegates,Structures, Enums, and also other namespace
+
+
+OOP : Design Architecture of building applications
+      WYSIWYG - What you see is what you get
+
+Class : is like a blue print with all datamembers/fields (carry data) and member functions/methods (that act on the data)
+      : that has a state and behaviour 

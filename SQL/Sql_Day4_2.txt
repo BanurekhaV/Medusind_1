@@ -100,3 +100,29 @@ begin
   insert into employee(Empid,Empname,Salary,Phoneno,deptid)
   select Empid,Empname,Salary,phoneno,@departmentid from inserted
  end
+
+
+--DDl Triggers
+
+ --eg 1 Database Scopped
+ use MedusindDB
+ create trigger trgRestrictTableCreation
+ on database
+ for create_table
+ as
+ begin
+  print 'You cannot create a table in this database'
+  rollback transaction
+  end
+
+  --server scopped
+  create trigger trg_ServerScopped
+  on all server
+  for create_table, alter_table,drop_table
+  as
+  begin
+   print ' You cannot create, alter or drop a table in any databases of this server'
+   rollback transaction
+  end
+
+
