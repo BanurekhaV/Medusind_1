@@ -103,6 +103,8 @@ Jagged Array : is also known as array of arrays
 Methods and Parameters :
 
 1. Value    -- call by value 
-2. Reference
-3. Out
-4. Parameter Arrays
+2. Reference -- call by reference
+3. Out      -- multiple values can be received from a called method
+4. Parameter Arrays -- 
+
+void samplefunc(int a, params int[]arr)

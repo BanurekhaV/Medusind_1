@@ -1,0 +1,110 @@
+String : Is a collection of characters. Memeory is allocated on the Heap. It is a predefined reference type. They have fixed size.
+         Are immutable
+         Memory cannot be changed dynamically
+         
+
+string s="abc";
+s="Xyz";
+
+copy(),concat(),compare(),equals()
+
+formats :
+
+{0:C} - $
+ {0:D} - Jan 25 2023
+{0:d} - 25/1/2023
+{0:P} - %
+
+Implicit datatype : var - can convert to any datatype. Value has to be assigned to var type at the time of declaration. Once a type is assigned, cannot change it
+
+Dynamic : can take up any datatype. Need not initialize while declaring dynamic type. Can change datatypes later. 
+
+It converts to the specific datatype at the time of running/execution. Hence there will be an overload at runtime and performance can get affected. Minimize usage of dynamic types
+
+structure and enumeration
+
+enum  - list of constant values
+
+
+OO Programming : 
+
+1. Encapsulation  : A unit of Representation or information
+                     Is defined as a process of enclosing one or more items within a physical or a logical package
+                     Prevents access to implementation details using access specifier
+
+
+Access Specifier : C# supports the below access specifiers
+
+   1. Private : Accessible only within the class in which it is declared. No access outside the class. All memebers of the class are private by default
+   2. Public : Accessible within the assembly or other assemblies with or without derivation . We just need an object of the class to access
+   3. Protected : Are accessible to all the derived classes irrespective of the assembly they are in
+   4. Internal : All classes in an assembly are Internal by default. Any internal members of the class are accessible only within the assembly and not outside the assembly.  
+   5. Internal Protected / protected internal : Internal to all the derived and non derived classes of the assembly and
+     Protected to allthe derived classes of other assemblies
+
+2. Abstraction : Providing essential details alone
+3. Inheritance : Extension of functionalities
+                 - Single Inheritance
+                 - Multiple Inheritance
+4. Polymorphism : Object exhibiting Many Forms
+                 - Overloading (function/operator)
+   
+                     Function overloading : the name of the function is same but the arguments/parameters are different (either the no. of arguments should be different or the datatype of the arguments should be different)
+If only the return type is different, it is not called function overloading
+                   
+                void add(int a, int b)
+                int add(int x, int y)
+ they are not overloaded
+
+                  Operator Overloading : Giving a new definition to the already existing operator to work with objects
+int a,b,c;
+a=6,b=5;
+ c=a+b;
+
+
+object o1,o2,o3;
+o1=o2+o3;
+
+
+Constructors: 1. Are special functions of a class, with the same name as that of the class
+              2. They are meant to initialize the fields
+              3. They cannot have any return types
+              4. They have to be declared either public or internal only
+              5. They can be overloaded
+              6. Can be called explicitly during object creation
+
+Destructors : Is a special function of a class
+              It deallocates the memory of the object
+              It does not have any return type
+              It also has to have the same name as that of the class prefixed with a tilde ~
+              It cannot be overloaded
+
+
+                 - Overriding (function)
+                    
+
+
+Note : All classes and interfaces are internal by default
+       All class memebers are private by default (we can change the access specifiers)
+       All interface members are public by default (we cannot change the access specifiers)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

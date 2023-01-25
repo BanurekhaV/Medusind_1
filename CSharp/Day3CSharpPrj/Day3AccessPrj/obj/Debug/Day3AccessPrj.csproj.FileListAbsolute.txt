@@ -1,0 +1,11 @@
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3AccessPrj\obj\Debug\Day3AccessPrj.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3AccessPrj\obj\Debug\Day3AccessPrj.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3AccessPrj\bin\Debug\Day3AccessPrj.exe.config
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3AccessPrj\bin\Debug\Day3AccessPrj.exe
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3AccessPrj\bin\Debug\Day3AccessPrj.pdb
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3AccessPrj\bin\Debug\Day3CSharpPrj.exe
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3AccessPrj\bin\Debug\Day3CSharpPrj.pdb
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3AccessPrj\bin\Debug\Day3CSharpPrj.exe.config
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3AccessPrj\obj\Debug\Day3AccessPrj.csproj.CopyComplete
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3AccessPrj\obj\Debug\Day3AccessPrj.exe
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3AccessPrj\obj\Debug\Day3AccessPrj.pdb

@@ -1,0 +1,7 @@
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3CSharpPrj\bin\Debug\Day3CSharpPrj.exe.config
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3CSharpPrj\bin\Debug\Day3CSharpPrj.exe
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3CSharpPrj\bin\Debug\Day3CSharpPrj.pdb
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3CSharpPrj\obj\Debug\Day3CSharpPrj.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3CSharpPrj\obj\Debug\Day3CSharpPrj.exe
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3CSharpPrj\obj\Debug\Day3CSharpPrj.pdb
+C:\Banu\Medusind\M_B1\CSharp\Day3CSharpPrj\Day3CSharpPrj\obj\Debug\Day3CSharpPrj.csproj.AssemblyReference.cache
