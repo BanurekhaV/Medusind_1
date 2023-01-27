@@ -46,6 +46,9 @@ Access Specifier : C# supports the below access specifiers
 3. Inheritance : Extension of functionalities
                  - Single Inheritance
                  - Multiple Inheritance
+
+
+       
 4. Polymorphism : Object exhibiting Many Forms
                  - Overloading (function/operator)
    
@@ -65,13 +68,24 @@ a=6,b=5;
 object o1,o2,o3;
 o1=o2+o3;
 
+               - Overriding (function)
+ - It is between base and derived classes.
+ - The function signature has to be the same across classes
+ - Marking the base class as virtual and the child class with override keywords
+ - The get Dynamic Polymorphism, use covariance concept (base class object pointing to child class)
 
+
+1. Static Polymorphism/Early Binding/Compile Time Polymorphism : Resolving Functions calls at the compile time (Eg Function Overloading)
+
+2. Dynamic Polymorphism/Late Binding/Runtime Polymorphism :  Resolving Functions calls at the Runtime(Overriding)
+ 
 Constructors: 1. Are special functions of a class, with the same name as that of the class
               2. They are meant to initialize the fields
               3. They cannot have any return types
               4. They have to be declared either public or internal only
               5. They can be overloaded
               6. Can be called explicitly during object creation
+             
 
 Destructors : Is a special function of a class
               It deallocates the memory of the object
@@ -79,14 +93,14 @@ Destructors : Is a special function of a class
               It also has to have the same name as that of the class prefixed with a tilde ~
               It cannot be overloaded
 
-
-                 - Overriding (function)
+                 
                     
 
 
 Note : All classes and interfaces are internal by default
        All class memebers are private by default (we can change the access specifiers)
        All interface members are public by default (we cannot change the access specifiers)
+       Base Class constructors would get called before any child class constructor is called, similarly derived class gets deallocated before Base class
 
 
 

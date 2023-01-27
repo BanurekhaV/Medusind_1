@@ -1,0 +1,40 @@
+Types of classes :
+
+1. static class : cannot be inherited and cannot be instantiated. All memebers have to be static. Eg :static class mystaticclass{  }
+
+2. abstract class: Cannot be instantiated, but have to be inherited. The subclasses(child/derived) can either implement or override its method. 
+
+abstract method: are methods that have only declarations and no definitions (body/implementation/code)
+
+Abstract classes:  are classes that can have both abstract as well as non-abstract members.
+
+Eg : abstract class myabstractclass {   }
+
+3. partial class :Can be defined in multiple Files. Multiple developers can work simultaneously with the class. Eg :public partial class mypartialclass {   }
+
+4. sealed class : cannot be inherited, but can be instantiated. They are concrete classes. Eg : sealed class mysealedclass { }
+
+
+Interfaces : are like classes, which can contain properties,methods,delegates,events etc, but only have declarations and no implementation
+- Interface members are public by default, you cannot modify the access
+- They cannot be instantiated, but a reference object can point to a derived class
+- They have to be inherited
+- A class can inherit from multiple interfaces
+- A class that inherits from an interface, will have to provide implementation to all the methods
+- Interfaces can inherit from other interface
+Eg : interface1{ method1(); method2();}
+
+     interface2{ method3(); method4();}
+    
+     interface3:interface1,interface2 { method5();}
+
+class a:interface3
+{
+
+method1(){}
+method2(){}
+method3(){}
+method4(){}
+method5(){}
+}
+
