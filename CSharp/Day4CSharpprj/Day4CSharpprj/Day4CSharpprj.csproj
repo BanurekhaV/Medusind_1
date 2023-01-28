@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Day4CSharpprj.TestInterface</StartupObject>
+    <StartupObject>Day4CSharpprj.ExceptionEg</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,9 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="abstracteg.cs" />
+    <Compile Include="ExceptionEg.cs" />
     <Compile Include="ICustomer.cs" />
     <Compile Include="MultiLevelInheritance.cs" />
     <Compile Include="OverridingEg.cs" />
+    <Compile Include="PropertiesEg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

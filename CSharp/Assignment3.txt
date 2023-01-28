@@ -1,0 +1,26 @@
+General:
+--------
+
+1. Create a Class Program which would be used to accepts two  Strings - FirstName and LastName and call the static method Display() that displays the first name in one line and the LastName in the second line after converting the same to upper case.
+
+2. Create a Program to count the no. of occurrences of a letter in a given string (for example in a string called “OOPS PROGRAMMING”, O appears 3 times)
+Hint : Accept a string and also the letter to be counted
+
+Strengthning OOPS:
+------------------
+
+3. Create a class called Saledetails which has data members like Salesno,  Productno,  Price, dateofsale, Qty, TotalAmount
+Create a method called Sales() that takes qty, Price details of the object and updates the TotalAmount as Qty *Price
+Pass the other information like SalesNo, Productno, Price,Qty and Dateof sale through constructor
+call the show data method to display the values.
+Hint : Use This pointer
+
+4. Create a class called Scholarship which has int Totalmarks and float fees as fields and a function Public float Merit(int m, float f) that takes Totalmarks and fees as an input.
+ 
+If the given marks is >= 70 and <=80, then calculate scholarship amount as 20% of the fees
+If the given mark is > 80 and <=90, then calculate scholarship amount as 30% of the fees
+If the given mark is >90, then calculate scholarship amount as 50% of the fees.
+In all the cases return the Scholarship amount
+
+
+5. Create a Class called Doctor with RegnNo, Name, Feescharged as Private members. Allow values to be set and also to display the same. (Hint : Use Properties)

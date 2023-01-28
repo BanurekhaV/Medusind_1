@@ -38,3 +38,26 @@ method4(){}
 method5(){}
 }
 
+
+Properties : are named members of classes,structures and interfaces.
+- They are extensions of fields
+- They are accessed using the accessors(get and set) to read or manipulate the values of private fields of a class
+- They do not have storage locations
+- They have to be public
+
+
+Exception : An exception is an unwanted or unexpected event, which occurs during the program execution
+
+  -  handling exeptions using program blocks like
+     try{} - Exceptions are activated here. It should consits codes that might run into exceptions. 
+            Is followed by one or more catches
+     catch{} - A block where exceptions are handled
+
+     finally{} - can be used to execute statements that have to exected wherether or not there is an exception
+   
+Throw: Allows to throw an exception class object when a problem arises
+
+All C# exceptions are classes. The base class for all exception classes is 'Exception'
+ 1. System.ApplicationException (User Defined exception classes) and Sytsem.SystemExceptions
+(In-Built Exception classes) are derived classes of Exception
+
