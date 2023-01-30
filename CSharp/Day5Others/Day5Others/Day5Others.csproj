@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{89B472F1-1C7B-46E0-B000-0CE5412A903B}</ProjectGuid>
+    <ProjectGuid>{FE867DBD-FA42-4CB5-B5CA-7F40077E5F87}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day4CSharpprj</RootNamespace>
-    <AssemblyName>Day4CSharpprj</AssemblyName>
+    <RootNamespace>Day5Others</RootNamespace>
+    <AssemblyName>Day5Others</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>Day4CSharpprj.baseclassInitialization</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,15 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="abstracteg.cs" />
-    <Compile Include="baseclassInitialization.cs" />
-    <Compile Include="ExceptionEg.cs" />
-    <Compile Include="ICustomer.cs" />
-    <Compile Include="MultiLevelInheritance.cs" />
-    <Compile Include="OverridingEg.cs" />
-    <Compile Include="PropertiesEg.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserDefinedException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

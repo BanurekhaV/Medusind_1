@@ -1,0 +1,12 @@
+C:\Banu\Medusind\M_B1\CSharp\Day5Extensionprj\Calculator_ClientPrj\bin\Debug\Calculator_ClientPrj.exe.config
+C:\Banu\Medusind\M_B1\CSharp\Day5Extensionprj\Calculator_ClientPrj\bin\Debug\Calculator_ClientPrj.exe
+C:\Banu\Medusind\M_B1\CSharp\Day5Extensionprj\Calculator_ClientPrj\bin\Debug\Calculator_ClientPrj.pdb
+C:\Banu\Medusind\M_B1\CSharp\Day5Extensionprj\Calculator_ClientPrj\bin\Debug\Day5Extensionprj.dll
+C:\Banu\Medusind\M_B1\CSharp\Day5Extensionprj\Calculator_ClientPrj\bin\Debug\Day5Extensionprj.pdb
+C:\Banu\Medusind\M_B1\CSharp\Day5Extensionprj\Calculator_ClientPrj\obj\Debug\Calculator_ClientPrj.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B1\CSharp\Day5Extensionprj\Calculator_ClientPrj\obj\Debug\Calculator_ClientPrj.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\CSharp\Day5Extensionprj\Calculator_ClientPrj\obj\Debug\Calculator_ClientPrj.csproj.CopyComplete
+C:\Banu\Medusind\M_B1\CSharp\Day5Extensionprj\Calculator_ClientPrj\obj\Debug\Calculator_ClientPrj.exe
+C:\Banu\Medusind\M_B1\CSharp\Day5Extensionprj\Calculator_ClientPrj\obj\Debug\Calculator_ClientPrj.pdb
+C:\Banu\Medusind\M_B1\CSharp\Day5Extensionprj\Calculator_ClientPrj\bin\Debug\MyCalculator2.dll
+C:\Banu\Medusind\M_B1\CSharp\Day5Extensionprj\Calculator_ClientPrj\bin\Debug\MyCalculator2.pdb

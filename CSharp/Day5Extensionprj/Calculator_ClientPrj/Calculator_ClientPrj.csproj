@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{89B472F1-1C7B-46E0-B000-0CE5412A903B}</ProjectGuid>
+    <ProjectGuid>{37527361-E596-4A3F-A2AE-89331B6DF642}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day4CSharpprj</RootNamespace>
-    <AssemblyName>Day4CSharpprj</AssemblyName>
+    <RootNamespace>Calculator_ClientPrj</RootNamespace>
+    <AssemblyName>Calculator_ClientPrj</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,10 +32,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>Day4CSharpprj.baseclassInitialization</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MyCalculator2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MyCalculator2\bin\Debug\MyCalculator2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,18 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="abstracteg.cs" />
-    <Compile Include="baseclassInitialization.cs" />
-    <Compile Include="ExceptionEg.cs" />
-    <Compile Include="ICustomer.cs" />
-    <Compile Include="MultiLevelInheritance.cs" />
-    <Compile Include="OverridingEg.cs" />
-    <Compile Include="PropertiesEg.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserDefinedException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Day5Extensionprj\Day5Extensionprj.csproj">
+      <Project>{c019c41a-7534-48f3-9188-cfea421940a9}</Project>
+      <Name>Day5Extensionprj</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

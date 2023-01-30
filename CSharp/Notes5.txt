@@ -1,0 +1,65 @@
+Extension Methods : This concept allows us to add new methods to the existing class/structure without modifying the original type(class / source code). There is no need to re-compile the original code
+
+Dynamic Link Libraries : are a collection of classes and methods that are compiled and available for use/re-use in other applications.
+- They do not have a Main() function. Hence they cannot be executed directly
+- They need a host to execute
+
+1. Inheritance  : 'is a' type of relation
+
+class shape {
+
+}
+
+
+class circle : base
+{
+
+}
+
+2. Aggregation/Composition or Containership : 'has a' type of relation
+
+class Engine{
+ double Power;
+ string type;
+
+}
+
+class car{
+
+Engine eng;  //an object of another class is contained here
+
+}
+
+
+Step 1: Create a class Library type application (.dll assembly gets created)
+Step 2 : Observe that the class is public by default. Add public function/s to the class
+Step 3: Build the project
+Step 4: Create a Console/Exe project
+Step 5 : Add a refernce to the DLL(class library)
+Step 6 : Use the dll Project in the .cs file by a 'using' clause
+step 7 : Create object of the Dll class and invoke the methods of the dll class.
+
+-Create another Class Library
+-Include the refernce of the first DLL
+-Use the Library in a using clause
+-Make the 2nd library class as static (eg : public static class secondclass{})
+-Create public static methods with the first argument as an object of the first dll class prefixed with a 'this' keyword
+-Build the Project
+
+-Go to the console application, include the refernce of the 2nd library and also use it in the using clause
+-Invoke new methods with the object of the first dll class (observe the down arrow and (extension) to the function
+in the intellisense
+
+
+Anonymous types : are implicitly typed objects which can have various heterogenous values assigned during
+declaration(read only)
+
+Collections :Are Special classes for data storage and retrieval. 
+They are dynamic unlike arrays.  (Minimum capacity of 8 elements is first allocated, which keeps incrementing by 8 every time the count is increased)
+----------
+Some common collection classes are:
+1. ArrayList - store heterogenous values. starts with index 0
+2. SortedList
+3. Stacks
+4. Queues
+5. HashTable etc..

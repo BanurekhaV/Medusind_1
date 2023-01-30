@@ -61,3 +61,11 @@ All C# exceptions are classes. The base class for all exception classes is 'Exce
  1. System.ApplicationException (User Defined exception classes) and Sytsem.SystemExceptions
 (In-Built Exception classes) are derived classes of Exception
 
+User Defined Exceptions: 
+1. Every UD exceptions class have to derive from ApplicationException class
+2. Decide when and where to throw the execption
+3. Handle the exception
+
+
+Base class Initilaization through derived class constructor ( applicable whenever the base class has 
+parameterised constructor)
