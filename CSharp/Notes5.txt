@@ -59,7 +59,33 @@ They are dynamic unlike arrays.  (Minimum capacity of 8 elements is first alloca
 ----------
 Some common collection classes are:
 1. ArrayList - store heterogenous values. starts with index 0
-2. SortedList
+2. SortedList - Key value pair
 3. Stacks
 4. Queues
-5. HashTable etc..
+5. HashTable  - key value pair (hashing technique, where random values are generated and assigned to the keys. basing the random values, hash tables sorts the data). Keys cannot be null or duplicates, while values can be null or duplicates
+
+
+Generics : A way of working with classes and methods decoupled with the datatypes without compromising on the 
+  - type safety
+  - Performance
+  - Productivity
+
+They are identified using a template (specific datatype ) within an angular bracket <T>
+
+Collection classes         			Generic Collection Classes
+ArrayList 		------------- >			 List
+HashTable          ------------- >           Dictionary
+
+
+Object Initializers: A new way to initialize an object of a class or collection. This allows us to assign values to the fields or properties at the time of creating an object without invoking a constructor
+
+
+Delegates : are like function pointers of c/c++
+- Can point to any function that matches the delegates signature
+
+Step 1: Declare delegate/s with signature
+Step 2: Create delegate objects and pass the matching functions to the signature
+Step 3: Call the delegate
+
+
+

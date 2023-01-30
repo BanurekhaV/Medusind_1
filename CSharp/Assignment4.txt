@@ -1,0 +1,21 @@
+1. Create an Abstract class Student with  Name, StudentId, Grade as members and also an abstract method Boolean Ispassed(grade) which takes grade as an input and checks whether student passed the course or not.  
+
+Create 2 Sub classes Undergraduate and Graduate that inherits all members of the student and overrides Ispassed() method 
+
+For the UnderGrad class, if the grade is above 70.0, then isPassed returns true, otherwise it returns false. For the Grad class, if the grade is above 80.0, then isPassed returns true, otherwise returns false.
+
+2. Create an console application to book train tickets. Create a Passanger class with (Name, Age) and write a function called TicketBooking(int no_of_tickets) that takes no.of tickets to be booked. If the no of tickets is > 2 per booking, raise an user defined exception, and print "cannot book more than 2 tickets". Else Print  "Ticket Booked Successfully". Add a Test class to call TicketBooking method by accepting all required details.
+
+3.
+ I.  Create a class library Project called Concession. Write a method called CalculateConcession(int age)  that takes age as an input and calculates concession for travel as below:
+If age<=5 then “Little Champs- Free Ticket” should be displayed
+If age >60 then calculate 30% concession on the totalfare(Which is a constant Eg:500/-) and Display “ Senior Citizen” + Calculated Fare
+Else “Print Ticket Booked” + Fare. 
+
+II. Create a Console application with a Class called Program which has int TotalFare as Constant, Name, Age.  Accept Name, Age from the user and call the CalculateConcession() function
+(Hint : Add required references)
+
+4. Create an Interface IStudent with int StudentId and string Name as Properties, void ShowDetails() as its method.
+
+Create 2 classes Dayscholar and Resident that implements the interface Properties and Methods. ShowDetails() should show DaysScholar details and Resident Details accordingly.
+

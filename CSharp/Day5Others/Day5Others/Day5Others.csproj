@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Day5Others.Delegates2</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllGenericsEg.cs" />
+    <Compile Include="Delegates1.cs" />
+    <Compile Include="Delegates2.cs" />
+    <Compile Include="GenericList.cs" />
+    <Compile Include="GenericList_UDC.cs" />
+    <Compile Include="HashTableEg.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
