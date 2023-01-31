@@ -1,0 +1,64 @@
+Persistence : Is the process of saving data permanently in the form of either a file or database 
+
+Serialization : Is the process of converting an object into Byte Stream, so that it can be persisted to memory,file,or database. The reverse process is called De-Serialization
+
+- BinaryFormat
+- SOAP - Simple Object Access Protocol
+- XML - Extended markup lang.
+- JSON - Javascript Object Notation
+
+
+DataAnnotations/MetaData/Decorators : are classes that give information to handle a particular teas/functionality in a specific manner
+
+
+Partial Methods: Should always use partial modifier
+- They cannot contain out parameters
+- It can be a static method
+- it can have only void return types
+- They can be created only in a partial classes or partial structures
+
+Partial Method  Eg in the Folder Project_Serialization
+
+finally the common file looks as below:
+
+
+public class MyPartialClass{
+
+public void newpartialMethod(int a)
+        {
+            partialMethod(a); //calling a partial method
+        }
+
+        partial void partialMethod(int data)
+        {
+            int answer = data + 100;
+            Console.WriteLine(answer);
+        }
+
+public void Show()
+        {
+            Console.WriteLine("Partial Methods");
+        }
+}
+
+
+
+ADO - Activex Data Objects. Is a bridge between the front end controls and back end database. Is a data tier framework with lots of objects that encapsulates all the data access techniques, thus hiding the details of data movement
+
+ADO.Net Architecture : 1. Connected Arch, 2. Disconnected Arch
+
+-Data Provider : SQL,Oracle,OLE,ODBC,MYSQL
+-Data Source : Database,Xml,Excel,Access
+
+- Data Consumers: Console, Windows, Web, Mobile, Iot, Bot
+
+- For working with Data Sources, ADO.Net provides certain class viz.
+ 1. Connection
+ 2. Command
+ 3. DataReader
+ 
+ 4. DataAdapter
+ 5. DataSet
+
+
+

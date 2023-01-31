@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FE867DBD-FA42-4CB5-B5CA-7F40077E5F87}</ProjectGuid>
+    <ProjectGuid>{E8B5AC6F-E70C-4C48-AB17-9A4EC9BE555D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day5Others</RootNamespace>
-    <AssemblyName>Day5Others</AssemblyName>
+    <RootNamespace>Project_Serialization</RootNamespace>
+    <AssemblyName>Project_Serialization</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,11 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Day5Others.GenericDelegates</StartupObject>
+    <StartupObject>Project_Serialization.MyPartialClass</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,16 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllGenericsEg.cs" />
-    <Compile Include="Delegates1.cs" />
-    <Compile Include="Delegates2.cs" />
-    <Compile Include="Delegates_AsParameters.cs" />
-    <Compile Include="GenericDelegates.cs" />
-    <Compile Include="GenericList.cs" />
-    <Compile Include="GenericList_UDC.cs" />
-    <Compile Include="HashTableEg.cs" />
-    <Compile Include="MulticastDelegate.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Customers.cs" />
+    <Compile Include="MyPartialClass.cs" />
+    <Compile Include="MyPartialClass2.cs" />
+    <Compile Include="Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

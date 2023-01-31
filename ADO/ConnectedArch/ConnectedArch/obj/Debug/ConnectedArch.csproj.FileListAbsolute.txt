@@ -1,0 +1,7 @@
+C:\Banu\Medusind\M_B1\ADO\ConnectedArch\ConnectedArch\bin\Debug\ConnectedArch.exe.config
+C:\Banu\Medusind\M_B1\ADO\ConnectedArch\ConnectedArch\bin\Debug\ConnectedArch.exe
+C:\Banu\Medusind\M_B1\ADO\ConnectedArch\ConnectedArch\bin\Debug\ConnectedArch.pdb
+C:\Banu\Medusind\M_B1\ADO\ConnectedArch\ConnectedArch\obj\Debug\ConnectedArch.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B1\ADO\ConnectedArch\ConnectedArch\obj\Debug\ConnectedArch.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\ADO\ConnectedArch\ConnectedArch\obj\Debug\ConnectedArch.exe
+C:\Banu\Medusind\M_B1\ADO\ConnectedArch\ConnectedArch\obj\Debug\ConnectedArch.pdb

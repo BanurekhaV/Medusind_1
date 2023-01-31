@@ -1,0 +1,7 @@
+C:\Banu\Medusind\M_B1\CSharp\Project_Serialization\Project_Serialization\bin\Debug\Project_Serialization.exe.config
+C:\Banu\Medusind\M_B1\CSharp\Project_Serialization\Project_Serialization\bin\Debug\Project_Serialization.exe
+C:\Banu\Medusind\M_B1\CSharp\Project_Serialization\Project_Serialization\bin\Debug\Project_Serialization.pdb
+C:\Banu\Medusind\M_B1\CSharp\Project_Serialization\Project_Serialization\obj\Debug\Project_Serialization.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B1\CSharp\Project_Serialization\Project_Serialization\obj\Debug\Project_Serialization.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\CSharp\Project_Serialization\Project_Serialization\obj\Debug\Project_Serialization.exe
+C:\Banu\Medusind\M_B1\CSharp\Project_Serialization\Project_Serialization\obj\Debug\Project_Serialization.pdb
