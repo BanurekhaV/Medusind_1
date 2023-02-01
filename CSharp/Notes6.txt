@@ -56,9 +56,21 @@ ADO.Net Architecture : 1. Connected Arch, 2. Disconnected Arch
  1. Connection
  2. Command
  3. DataReader
+
+ CRUD Operations using connected:
+   C - create  (insert)   - int ExecuteNonQuery()  (is a function of the command class used for insert/update and delete)
+   R - Read    (select)   - SqlDataReader ExecuteReader()   ( is the function of command class used to work with select statements
+   U - Update  (update)   - int ExecuteNonQuery() 
+   D - Delete  (delete)   - int ExecuteNonQuery() 
  
  4. DataAdapter
  5. DataSet
+       Datatables
+          DataRows
+          DataColumns
+          DataConstraints
+       DataRelationships
+      
 
 
 

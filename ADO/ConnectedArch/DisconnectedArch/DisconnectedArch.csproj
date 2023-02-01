@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D32F9B4E-DC94-4468-A04A-25F438CFCC1E}</ProjectGuid>
+    <ProjectGuid>{070A5782-E2D9-4996-B6A5-D7F96E503693}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConnectedArch</RootNamespace>
-    <AssemblyName>ConnectedArch</AssemblyName>
+    <RootNamespace>DisconnectedArch</RootNamespace>
+    <AssemblyName>DisconnectedArch</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>ConnectedArch.CRUD_Connected</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,8 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CRUD_Connected.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="DisconnectedProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

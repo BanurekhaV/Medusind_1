@@ -1,0 +1,17 @@
+Code challange - 3
+
+Time : 75 mts
+
+1. Create a table called Code_Employee(empno int primary key,
+   empname varchar(35), (is a required field)
+  empsal numeric(10,2) - (check empsal >=25000)
+  emptype char(1) ) (either 'F' for fulltime or 'P' part time)
+
+
+2. Create a stored procedure to add new employee records. The procedure should accept all the employee details as input parameters 
+
+  Test the procedure
+
+3. Using Ado.net classes/methods, insert employee record in the table by invoking the procedure  
+
+4. Display all the records (including the newely added record) 
