@@ -1,0 +1,68 @@
+LINQ  :  Language Integrated Query - A uniform syntax to retrieve data from different sources and formats
+         It is a syntax that eliminates the mismatches between programming languages and the various datasources, thereby providing a single interface for querying
+         Linq queries return results as objects
+         It enables us to use OO approach on the resultset, and not to worry about transforming to different formats into objects
+
+ Exists in 2 forms : 1. Query Syntax(query expression syntax),
+              from<range variable> in<IEnumerable<T> or IQueryable<T> Collection
+              <standard query operators><lambda expressions>
+              <select or groupby operator>
+              <result formation>
+
+
+ 2. Method Syntax(fluent, Method expression syntax) Uses extension methods assoaciated with Lambda expressions
+
+Lambda Expressions : are also known as lambda functions, which is essentially blocks of code that can be assigned to variables, passed as an argument, or returned from a function call. It is divided into 2 parts ( Left side is input whose data type is inferred/implied and the right side is an expression. The centre is an lambda operator (=> also means "Goes To")
+
+
+Linq - Collections
+Linq - Object
+Linq - SQL
+Linq - Entities
+
+Linq : Provides 2 different types of behaviour
+
+  Deferred Execution                                   vs                     Immediate Execution
+   
+  1.  Lazy Operator														Greedy Operator
+    
+   2. Query is not executed at the point of its declaration					Query is executed at the point of declaration
+    
+  3.  Projection Opeartors(select, select many)							Aggregate Functions(count,avg,min,max)
+    Restriction OperatorS(where)										ElementOperators(First,Last,Single,ToArray,ToList)
+    Paging Operators (Take, skip)
+
+By default, LINQ uses deferred execution. When we write a query, it does not execute by itself. It executes when we access the query the results. It is being deferred until the query varibale is iterated over in a loop
+
+A query will be re-evaluated, and hence we always get the latest data
+
+
+Immediate Linq  : Is the reverse of deferred, and forces the LINQ to excecute the query immediately after it is constructed. Hence the data result may not be the latest
+
+
+Aggregates ,
+
+
+Linq-Datasets : 1. Obtain the DataSource
+2. Fill the DataSet (2 tables)
+3. Establiesh a relationship between the 2 tables
+4. Use a Linq Query against the 2 tables thru join
+5. Loop to the display the results
+
+
+
+Hands on: 1.Find and display all the numbers from a given list of numbers, which are divisible by 3
+
+  sample data : List<int> numbers = new List<int>() { 16, 23, 12, 19, 42, 28, 57, 7, 9, 30 };
+
+2. Find the student whose ID =4     
+
+sample data :
+List<Student> studentlist = new List<Student>()
+            {
+                new Student(){StudentId=1, StudentName="Jamuna",Age=13},
+                new Student(){StudentId=2, StudentName="Monisha",Age=21},
+                new Student(){StudentId=3, StudentName="Brijesh",Age=18},
+                new Student(){StudentId=4, StudentName="Ram",Age=20},
+                new Student(){StudentId=5, StudentName="Ritu",Age=15}
+            };

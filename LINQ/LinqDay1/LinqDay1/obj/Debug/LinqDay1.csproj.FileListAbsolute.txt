@@ -1,0 +1,7 @@
+C:\Banu\Medusind\M_B1\LINQ\LinqDay1\LinqDay1\bin\Debug\LinqDay1.exe.config
+C:\Banu\Medusind\M_B1\LINQ\LinqDay1\LinqDay1\bin\Debug\LinqDay1.exe
+C:\Banu\Medusind\M_B1\LINQ\LinqDay1\LinqDay1\bin\Debug\LinqDay1.pdb
+C:\Banu\Medusind\M_B1\LINQ\LinqDay1\LinqDay1\obj\Debug\LinqDay1.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\LINQ\LinqDay1\LinqDay1\obj\Debug\LinqDay1.exe
+C:\Banu\Medusind\M_B1\LINQ\LinqDay1\LinqDay1\obj\Debug\LinqDay1.pdb
+C:\Banu\Medusind\M_B1\LINQ\LinqDay1\LinqDay1\obj\Debug\LinqDay1.csproj.AssemblyReference.cache
