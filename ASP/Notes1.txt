@@ -1,0 +1,104 @@
+ASP.Net : Is a web Development platform, that provides programming model, comprehensive softwares infrastructure and various other services required to build a robust web applications for PCs or mobile devices.
+
+
+Website : collection of web pages
+
+Web Application : Is a logic building application
+
+Web Server : Can host only websites(godaddy)
+
+Appl Server : Hosts Web Applications
+
+
+IIS : Internet Information Server ( Web App Server) - Automatic Hosting
+ 
+Apache : explicit Hosting is needed
+
+
+Web Form : Is a page that can contain 1. Design, 2: Code
+- Web forms/pages have an ext of .aspx
+- Designer files have ext of .aspx.designer.cs or vb
+- Code behind files have an ext of <webformname>.aspx.cs,  .aspx.vb
+- Is associated with its code file using @page Directive
+
+
+Page Life Cylce:
+
+- When a request for a page is received
+      - An instance of the requested webform is created
+      - Events are processed
+      - Generates the HTML & Posts to the client
+      - The web form is immediately disposed
+
+S    -  Start of the page
+I    -  Initialization (all controls and classes)
+L    -  Load ( in the memory)
+V    -  Validate
+E    -  Event Handling
+R    -  Render (CSS,UI are applied)
+
+Pre-Init
+Init
+InitComplete
+OnPreLoad
+Load
+LoadComplete
+OnpreRender
+Render
+Unload
+
+Application Life Cycle : 
+ - Application Start  : all global variables are initialized and set to default values
+ - Object Creation : HttpContext, HtppRequest and HttpResponse Objects are created
+ - HttpApplication Creation - This object helps in catering to subsequent requests
+ - Dispose- Object instance is being detsroyed
+ - Application End 
+
+Inorder to trace the request and response chain, enable the Trace attribute under System.Web Tag
+- a File called trace.axd gets created which can trace the entire sequence 
+
+
+StateManagement : Is a technique of storing the values/data/properties of server controls across multiple pages
+
+Types of Management :
+
+Client Techniques                            Server Techniques
+ 1. ViewState								1. SessionState
+ 2. HiddenFields							2. ApplicationState
+ 3. Cookies
+ 4. Query String
+
+ViewState :Is a variable that can hold any type of data. It is an Dictionary Object with key and value. It stores in the client
+
+Hidden Fields: Is a class which is also used to manage the state of the server controls. The disadvantage of hiddenfields is that it adds more load on thesyatem, as it has be instantiated, and all members initialized.
+
+- Can use Hiddenfields when the data that we want to store is less, otherwise use ViewState variables
+- Both ViewState as well as Hiddenfileds can manage the state of the server controls only between multiple postbacks of the same page and not across pages. Both are local the form/page
+
+Cookies : Are client side state management technique that allows data travelling between pages.
+They are of 2 types : 1. Persistent cookie : use a class called httpcookie to store the values through out the session
+
+2. Non-persistent cookie : No httpcookie class is used
+
+QueryStrings : Are information passed over the url. Hence they are visible. We can use the QS when we have to manage in senstive data across pages.  
+
+
+SessionState : are like viewstate variables of type dictionary, that takes a key and value. These variables are stored at the server side.
+
+ApplicationState: The various events that are available at Application Level are :
+
+-Application_Start
+-Application_End
+-Application_Error
+
+
+
+
+
+
+
+
+
+
+
+
