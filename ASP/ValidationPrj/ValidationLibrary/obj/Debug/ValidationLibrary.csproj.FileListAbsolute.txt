@@ -1,0 +1,6 @@
+C:\Banu\Medusind\M_B1\ASP\ValidationPrj\ValidationLibrary\bin\Debug\ValidationLibrary.dll
+C:\Banu\Medusind\M_B1\ASP\ValidationPrj\ValidationLibrary\bin\Debug\ValidationLibrary.pdb
+C:\Banu\Medusind\M_B1\ASP\ValidationPrj\ValidationLibrary\obj\Debug\ValidationLibrary.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B1\ASP\ValidationPrj\ValidationLibrary\obj\Debug\ValidationLibrary.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\ASP\ValidationPrj\ValidationLibrary\obj\Debug\ValidationLibrary.dll
+C:\Banu\Medusind\M_B1\ASP\ValidationPrj\ValidationLibrary\obj\Debug\ValidationLibrary.pdb

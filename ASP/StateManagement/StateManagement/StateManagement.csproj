@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ApplicationState.aspx" />
     <Content Include="checkform.aspx" />
     <Content Include="CookieDestination.aspx" />
     <Content Include="CookieSource.aspx" />
@@ -80,6 +81,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationState.aspx.cs">
+      <DependentUpon>ApplicationState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationState.aspx.designer.cs">
+      <DependentUpon>ApplicationState.aspx</DependentUpon>
+    </Compile>
     <Compile Include="checkform.aspx.cs">
       <DependentUpon>checkform.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

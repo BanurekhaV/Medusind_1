@@ -1,0 +1,21 @@
+<%   %> - inline expression for server code
+<%@ ..%> - directive info. Settings of the page
+
+<%=...%> - Data binding
+
+<%-- --%>  - Commenting
+
+Button or DropDown : have PostBack events. For Button controls it is enabled automatically, but for dropdowns, we have to to Ebable AutoPostback =true
+
+
+Validations Controls  :  Are inbuilt controls of ASP.Net Framework that can validate basic user inputs
+Custom Validators : Are special controls that can aide in validating business specific validation code
+Client Side Validations : Are usually done using Java Scripts to be run at the clinet(browser)
+
+
+Caching : Is a technique to improve performance and scalability, by storing frequently used data/pages in the memory
+
+To cache a webform, we use @OutputCache Directive 
+  - Duration : Specifies the time in seconds for which the form/page should be cached
+  - VatyByParam : Caching multiple responses of a single webform
+  - Location : Where to cache
