@@ -1,0 +1,20 @@
+User Controls : A combination of one or more server controls on a web user page
+
+
+-aspx  - web forms
+-ascx  - user controls
+
+Custom Controls : are compiled into a seperate .dll assembly, but not the user control
+- Custom Controls can be added to the tool box, but user control cannot be added
+- Custom Control are done using extensive coding as there is no support for tool box, but User controls are easy, as they use the tool box(for various server controls)
+
+
+Security : 1. Authentication :Is a process of identifying a user 
+
+2. Authorization: Is a process of allowing/denying certain resources  to the authenticated
+
+there are 4 types of authentication:
+   1. Windows Authentication
+   2. Forms Authentication
+   3. Passport Authentication (Single sig-on)
+   4. Custom Authentication

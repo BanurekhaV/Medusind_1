@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CacheForm.aspx.cs" Inherits="CachingPrj.CacheForm" %>
-<%@ OutputCache Duration="30" VaryByParam="None" Location="Client" %>
+<!--<%@ OutputCache Duration="30" VaryByParam="None" Location="Client" %>-->
 
 <!DOCTYPE html>
 
@@ -19,8 +19,9 @@
                 <asp:ListItem Text="Laptops" Value="Laptops"></asp:ListItem>
                 <asp:ListItem Text="Desktops" Value="Desktops"></asp:ListItem>
                 <asp:ListItem Text="iPhones" Value="iPhone"></asp:ListItem>
-                <asp:ListItem Text="LED TV" Value="LED TV"></asp:ListItem>
+                <asp:ListItem Text="LED TV" Value="TV"></asp:ListItem>
             </asp:DropDownList>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
             <br />
             <br />

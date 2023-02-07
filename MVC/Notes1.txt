@@ -1,0 +1,40 @@
+ASP.NET MVC - a very popular framework for developing web based applications
+- is a successor of ASP.net WebForms
+
+- MVC stands for Model View Controller. It is a design/archetectural pattern
+
+ASP.NET MVC: 
+
+ - Designs and codes are seperated
+ - It uses Pure HTML Control or HTML Helper classes.
+ - No Server Controls
+ - It Uses Controller based URL
+ - It Uses Razor Syntax (Prog. Code and HTML co-exists)
+ - It uses Layouts in place Master Pages for Consistent Loook and Feel
+ - It is lightweight, fast and secure
+ - Asp.Net MVC is an open source
+
+
+ Model : Is responsible for keeping Data/ Database. It keeps all the logic like connecting,retrieving,manipulating data from/to the source
+
+ View : Is responsible for serving web pages to the client(UI)
+
+ Controller : Is responsible in managing all programming logics and routing
+   - use the controller suffix always
+   - Every controller has a default action method called Index()
+   - All controllers are full of Action Methods
+
+Action Methods: 
+  - They have to be only public
+  - They cannot be overloaded
+  - They cannot be static
+  - Action Result is the base class for all result types action method
+      - other result classes :
+         ViewResult
+         ContentResult
+         Json
+         Empty
+         File
+         Redirect
+         RedirectToAction 
+  
