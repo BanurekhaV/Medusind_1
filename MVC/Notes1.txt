@@ -30,11 +30,16 @@ Action Methods:
   - They cannot be static
   - Action Result is the base class for all result types action method
       - other result classes :
-         ViewResult
-         ContentResult
-         Json
-         Empty
-         File
-         Redirect
-         RedirectToAction 
+         ViewResult : Represents the HTML Razor
+         ContentResult : Represents a text / Html
+         Json : Represents a jSON Object that can be used in AJAX applications
+         Empty : Represents no Result
+         FileContent : Represents a downloadable Binary content
+         FilePathResult : Represents a downloadbale file with path
+         FileStreamResult : Represents a downloadable file with stream object
+         Redirect : Represents a redirection to a new URL
+         RedirectToAction : Represents a redirection to a an actionmethod of either the same controller or other controllers
+         Javascript : Represents a javascript script
+
+
   

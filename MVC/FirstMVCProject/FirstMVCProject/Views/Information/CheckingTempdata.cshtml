@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "CheckingTempdata";
+}
+
+<h2>CheckingTempdata</h2>
+
+@foreach (var item in TempData["flowers"] as List<string>)
+{
+    <p>@item</p>
+}

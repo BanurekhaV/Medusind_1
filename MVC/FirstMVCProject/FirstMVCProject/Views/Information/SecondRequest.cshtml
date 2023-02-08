@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "SeconRequest";
+}
+
+<h2>SecondRequest</h2>
+@*
+    using the Tempdata["flowers"] object
+    @foreach(var item in TempData["flowers"]as List<string>)
+                {
+                    <p>@item</p>
+                }*@
+
+@* using the flowerlist Model*@
+@foreach(var item in Model)
+            {
+                <p>@item</p>
+            }

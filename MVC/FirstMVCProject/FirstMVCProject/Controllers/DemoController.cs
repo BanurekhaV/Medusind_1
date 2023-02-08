@@ -29,7 +29,7 @@ namespace FirstMVCProject.Controllers
         }
 
         //3. EmptyResult
-
+        [NonAction]
         public EmptyResult EmptyMethod()
         {
             int amt = 45000;
@@ -51,6 +51,18 @@ namespace FirstMVCProject.Controllers
         public ViewResult ViewMethod()
         {
             return View();
+        }
+
+        //6. Redirect
+        public RedirectResult RedirectMethod()
+        {
+            return Redirect("~/Home/About");
+        }
+
+        //7. Redirect to Action
+        public ActionResult RedirectToAction()
+        {
+            return RedirectToAction("Contact","Home");
         }
     }
 }

@@ -1,0 +1,17 @@
+﻿@model IEnumerable<FirstMVCProject.Models.Employee>
+@{
+    ViewBag.Title = "ListEmployee";
+}
+
+<h2 style="color:brown;"><strong>ListEmployee</strong></h2>
+
+@foreach(var e in Model)
+            {
+                <ul>
+                    <li>@e.Id</li>
+                    <li>@e.Name</li>
+                    <li>@e.Age</li>
+                </ul>
+            }
+
+

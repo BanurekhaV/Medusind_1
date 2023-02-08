@@ -1,0 +1,69 @@
+
+Views : Are the final page on the users browser windows
+        They are maintained as a folder structure consisting of all .cshtml files with the desin layout, used to render web pages
+        They keep a seperate folder for each controller in the application with the same name
+        They have the .cshtml files that have the same name as that of the action methods of the controller
+
+
+Razor Syntax: A powerful and easiest way to write server based codes directly into the view pages
+             It is a markup syntax that allows to embed programming directly into the page
+
+Note : @m(odel) - defines type of the model for the view
+       @M(odel)  - accesses the model linked with the view
+
+
+ Guidelines for Razor Syntax :
+    1. Use @{....} block to write c# code
+    2. All Inline expressions like variables and functions starts with @
+    3. variables are declared using var keyword and all the code statements end with semicolon ;
+    4. Enclose all string values in double quotes  " "
+    5.  All Razor comments are done using @* ... *@
+         single line //
+         multiline /*   */
+         html comments <!--    -->
+
+
+For passing information from the controllers to the views, we use
+
+ 1. ViewBag : Dynamic Data Type
+              Has a short life (once it passes the data to the view, it becomed null)
+              Does Not Require typecasting
+
+Example : ViewBag.Mydata="This is my Data";  // to create
+          @Viewbag.Mydata               //to access
+
+ 2. ViewData : It is a Dictionary Object derived from ViewDataDictionary class
+               Uses a key value pair to store and retrieve data
+               Also has a short life (once data is passed from controller to the view, it is set to null)
+               It requires Typecasting for complex data type
+
+Example : ViewData["Mydata"]="This is My Data";  // to create
+          @ViewData["Mydata"]       //to access
+
+ 3. Tempdata :Is also a dictionbary object derived from TempDataDictionary.
+              Uses a key value pair to store and retrieve data
+              Internally it uses Session to store values
+              TempData can be used in subsequent request
+              by using  TempData.Keep() method. (Retains the Keys)
+              It has a bigger life than Viewbag/ViewData.
+              It is mostly used to transfer data from one controller to other
+
+
+
+EF :  Entity Framework
+
+- there 3 approaches to work with the database
+  1. Database first : Database is already existing
+  2. Code first : No Database, we have to create it using the objects
+  3. Model First : First Design Model 
+
+
+
+
+
+
+
+
+
+
+

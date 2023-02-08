@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h3>@ViewBag.data1</h3>
+
+<h2>@ViewData["data2"]</h2>
+
+@foreach (var item in TempData["flowers"] as List<string>)
+{
+    <p>@item</p>
+}
+

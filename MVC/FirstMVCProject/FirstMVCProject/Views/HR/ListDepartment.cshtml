@@ -1,0 +1,25 @@
+﻿@model IEnumerable<FirstMVCProject.Models.Department>
+@{
+    ViewBag.Title = "ListDepartment";
+}
+
+<h2>List of Departments</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Dept No</th>
+            <th>Dept Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.DID</td>
+                    <td>@item.Dname</td>
+                </tr>
+            }
+    </tbody>
+</table>
+
