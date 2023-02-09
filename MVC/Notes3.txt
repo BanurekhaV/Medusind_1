@@ -1,0 +1,38 @@
+EF :  Entity Framework
+
+- There are 3 approaches to work with the EF
+
+  1. Database first : Database is already existing
+  2. Code first : No Database, we have to create it using the objects(classes)
+  3. Model First : No Database/NoCode ( we create a design
+
+
+Life Cycle of EF 
+
+ 1. Added
+ 2. Modified
+ 3. Deleted
+ 4. Detached
+ 5. Unchanged
+
+
+The namespace System.Data.Entity contains classes that provides access to the core functionality of the EF
+It enables to perform CRUD using CLR strongly typed objects
+
+ Types of Entities:
+
+ 1. POCO Entities ( Plain Old CLR Object) : A POCO entity is a class that does not depend on any framework specific base classes. It is like any other normal .NET CLR class
+
+ 2. Dynamic Proxy Entities(POCO Proxy) : Is a runtime proxy class which wraps POCO entity. This allows lazy loading
+
+EF Context : Is a class that represents the entire Database Schema as  domain specific objects. These Objects are represented as DBSets
+
+DBSet: is a collection of all entity related information that can be queried/ or manipulated to effect the original source
+
+
+CRUD :
+To pass data from view to controller, we can use the below 4 ways
+ 1. Model Object 
+ 2. Passing as parameters
+ 3. Request Object
+ 4. Forms Collection

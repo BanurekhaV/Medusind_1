@@ -1,0 +1,7 @@
+Using EF, connect to Northwind Database
+
+1. Create a Controller called as Assignment
+
+2. Add an action method that returns all the customers residing in Germany
+
+3. Add another action method, that returns customer details with an Order Id ==10248

@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Day2MVCPrj.Models.Ten_Most_Expensive_Products_Result>
+@{
+    ViewBag.Title = "Procedure_ExpensiveProducts";
+}
+
+<h2>List of Expensive Products</h2>
+@foreach(var p in Model)
+            {
+                <li>@p.TenMostExpensiveProducts</li>
+                <li>@p.UnitPrice</li>
+            }
+

@@ -50,12 +50,6 @@ Example : ViewData["Mydata"]="This is My Data";  // to create
 
 
 
-EF :  Entity Framework
-
-- there 3 approaches to work with the database
-  1. Database first : Database is already existing
-  2. Code first : No Database, we have to create it using the objects
-  3. Model First : First Design Model 
 
 
 
