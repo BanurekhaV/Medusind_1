@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Day3EF_Codefirst.Models.Car>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CarName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarModel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarCost)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarModel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarCost)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CarNo }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CarNo }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CarNo })
+        </td>
+    </tr>
+}
+
+</table>

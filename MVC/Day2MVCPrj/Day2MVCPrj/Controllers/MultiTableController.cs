@@ -21,5 +21,10 @@ namespace Day2MVCPrj.Controllers
         {
             return View(db.Orders.ToList());
         }
+
+        public ActionResult getCustOrders()
+        {
+            return View(db.CustOrdersOrders("VINET"));
+        }
     }
 }

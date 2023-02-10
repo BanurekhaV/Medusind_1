@@ -760,6 +760,9 @@
             <Parameter Name="Beginning_Date" Mode="In" Type="DateTime" />
             <Parameter Name="Ending_Date" Mode="In" Type="DateTime" />
           </FunctionImport>
+          <FunctionImport Name="CustOrdersOrders1">
+            <Parameter Name="CustomerID" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="CustOrdersOrders_Result">
           <Property Type="Int32" Name="OrderID" Nullable="false" />
@@ -988,6 +991,7 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="CustOrdersOrders1" FunctionName="NorthwindModel.Store.CustOrdersOrders" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

@@ -66,5 +66,14 @@ namespace Day2MVCPrj.Models
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sales_by_Year_Result>("Sales_by_Year", beginning_DateParameter, ending_DateParameter);
         }
+    
+        public virtual int CustOrdersOrders1(string customerID)
+        {
+            var customerIDParameter = customerID != null ?
+                new ObjectParameter("CustomerID", customerID) :
+                new ObjectParameter("CustomerID", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CustOrdersOrders1", customerIDParameter);
+        }
     }
 }

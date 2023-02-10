@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Day3MVCPrj.Models.CustOrdersOrders_Result>
+@{
+    ViewBag.Title = "CustomerOrders";
+}
+
+<h2>CustomerOrders</h2>
+
+@foreach(var item in Model)
+            {
+<ul>
+    <li>Order ID : @item.OrderID</li>
+    <li>Order Date : @item.OrderDate</li>
+    <li>Required Date : @item.RequiredDate</li>
+    <li>Shipped Date : @item.ShippedDate</li>
+</ul>
+            }

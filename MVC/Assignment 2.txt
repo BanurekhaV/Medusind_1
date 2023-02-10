@@ -1,0 +1,12 @@
+Assignment - MVC
+
+Code First approach: Full Steps
+--------------------
+
+- Create a Database called MoviesDB 
+
+- Create a table called Movie(Mid,Moviename,DateofRelease)
+
+- Perform minimum Crud Operations (create,edit,delete)
+
+- Display the movies released in any given year (use linq)

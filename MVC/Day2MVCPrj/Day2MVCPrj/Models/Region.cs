@@ -11,7 +11,6 @@ namespace Day2MVCPrj.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
     
     public partial class Region
     {
@@ -22,7 +21,6 @@ namespace Day2MVCPrj.Models
         }
     
         public int RegionID { get; set; }
-        [Required(ErrorMessage ="Please enter description")]
         public string RegionDescription { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

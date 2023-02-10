@@ -206,5 +206,6 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CustOrdersOrders1" FunctionName="NorthwindModel.Store.CustOrdersOrders" />
   </EntityContainerMapping>
 </Mapping>
