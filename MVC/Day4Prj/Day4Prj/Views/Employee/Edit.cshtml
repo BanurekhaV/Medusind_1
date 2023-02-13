@@ -1,0 +1,11 @@
+﻿@model Day4Prj.Models.Employee
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using(Html.BeginForm())
+            {
+                @Html.EditorForModel()
+            }

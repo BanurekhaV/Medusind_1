@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day4HtmlHelpersPrj", "Day4HtmlHelpersPrj\Day4HtmlHelpersPrj.csproj", "{3BF5EECE-FEE3-4B17-A7DF-5B14378AB23B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BF5EECE-FEE3-4B17-A7DF-5B14378AB23B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF5EECE-FEE3-4B17-A7DF-5B14378AB23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BF5EECE-FEE3-4B17-A7DF-5B14378AB23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BF5EECE-FEE3-4B17-A7DF-5B14378AB23B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62D35CA6-CBA4-4073-8FAF-6FE4E20BF873}
+	EndGlobalSection
+EndGlobal

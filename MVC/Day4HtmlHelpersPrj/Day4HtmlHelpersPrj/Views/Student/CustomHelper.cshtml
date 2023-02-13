@@ -1,0 +1,19 @@
+﻿@using Day4HtmlHelpersPrj.CustomClasses
+@{
+    ViewBag.Title = "CustomHelper";
+}
+
+<h2>CustomHelper</h2>
+
+<h1> Static Helper</h1>
+
+<p>Hello Custom Helper</p>
+@CustomHelper.LabelWithMark("This is an Example to Understand Static Helpers")
+
+<hr/>
+
+<h1>Extension Helper</h1>
+<p>
+    @Html.extGreen("Extension Helper Method in Green") <br/>
+    @Html.extRed("Extension Helper Method in Red")
+</p>

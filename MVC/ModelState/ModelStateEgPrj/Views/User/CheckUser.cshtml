@@ -1,0 +1,35 @@
+﻿@model ModelStateEgPrj.Models.User
+@{
+    ViewBag.Title = "CheckUser";
+}
+
+<h2>CheckUser</h2>
+
+@using(Html.BeginForm())
+            {
+                @Html.ValidationSummary()
+<div>
+    <div>
+        @Html.LabelFor(m => m.UFname)
+        @Html.TextBoxFor(m => m.UFname)
+        @Html.ValidationMessageFor(m => m.UFname)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.ULname)
+        @Html.TextBoxFor(m => m.ULname)
+        @Html.ValidationMessageFor(m => m.ULname)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Age)
+        @Html.TextBoxFor(m => m.Age)
+        @Html.ValidationMessageFor(m => m.Age)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email)
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+    <br/>
+    <input type="submit" value="Save"/>
+</div>
+            }

@@ -1,0 +1,25 @@
+﻿@model Day4HtmlHelpersPrj.Models.Student
+@{
+    ViewBag.Title = "templatedHelper";
+}
+
+<h2>templatedHelper</h2>
+@using (Html.BeginForm())
+{
+    <table border="1">
+        <tr>
+            <td>@Html.DisplayName("RollNo")</td>
+            <td>@Html.Editor("RollNo")</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(m => m.RollNo)</td>
+            <td>@Html.EditorFor(m => m.RollNo)</td>
+        </tr>
+       
+        <tr>
+            <td><input type="submit" /></td>
+        </tr>
+    </table>
+    }
+
+

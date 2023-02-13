@@ -1,0 +1,27 @@
+﻿@using Day4HtmlHelpersPrj.Models
+@model Employee
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    @Html.LabelFor(m=>m.Name, new  { @class="label-control"})
+    @Html.TextBoxFor(m=>m.Name, new {@class="form-control"})
+    <br/>
+    <h3>Gender</h3>
+    @Html.RadioButtonFor(m=>m.Gender, true, new {id="male-true"})
+    @Html.RadioButtonFor(m=>m.Gender, false, new {id="female-true"})
+    <br/>
+    <h2>Terms and Condition</h2>
+    @Html.CheckBoxFor(m=>m.IAccept)
+    <br/>
+    <h2>City</h2>
+    @Html.DropDownListFor(m=>m.city,new SelectList(Enum.GetValues(typeof(city))),
+    "Select City", new { @class = "form-control" })
+
+    <h2>Skills</h2>
+    @Html.ListBoxFor(m=>m.skills, new SelectList(Enum.GetValues(typeof(skills))),
+    new {@class="form-control"})
+</div>

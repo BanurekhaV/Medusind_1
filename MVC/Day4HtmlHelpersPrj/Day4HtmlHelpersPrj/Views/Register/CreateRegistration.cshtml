@@ -1,0 +1,45 @@
+﻿@using Day4HtmlHelpersPrj.Models
+@{
+    ViewBag.Title = "CreateRegistration";
+}
+
+<h2>CreateRegistration</h2>
+@using(Html.BeginForm("CreateRegistration","Register",FormMethod.Post))
+            {
+<table border="1" cellpadding="5" cellspacing="5">
+    <tr>
+        <td>@Html.Label("Enter Your Name")</td>
+        <td>@Html.TextBox("txtname")</td>
+    </tr>
+    <tr>
+        <td>@Html.Label("Enter Password")</td>
+        <td>@Html.Password("txtpass")</td>
+    </tr>
+    <tr>
+        <td>@Html.Label("Gender")</td>
+        <td>
+            Male : @Html.RadioButton("Gender", "Male")
+            Female : @Html.RadioButton("Gender", "Female")
+            Others : @Html.RadioButton("Gender", "Others")
+        </td>
+    </tr>
+    <tr>
+        <td>@Html.Label("Select Areas Of Interest ")</td>
+        <td>
+            @Html.Label("Music")@Html.CheckBox("M")
+            @Html.Label("Sports")@Html.CheckBox("S")
+            @Html.Label("Arts")@Html.CheckBox("A")
+        </td>
+    </tr>
+    <tr>
+        <td>@Html.Label("Enter City")</td>
+        <td>
+            @Html.DropDownList("City",
+                new SelectList(Enum.GetValues(typeof(cities))), "Select City")
+    </td>
+</tr>
+<tr>
+    <td colspan="2"><center><button type="submit" id="Save">Submit</button></center></td>
+</tr>
+</table>
+}
