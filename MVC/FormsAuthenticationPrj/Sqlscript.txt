@@ -1,0 +1,28 @@
+create table Employee
+(ID int identity primary key,
+EName varchar(max),
+Job varchar(40),
+Salary int)
+
+create table Users
+( ID int primary key identity(1,1),
+UserName Varchar(50),
+UserPassword varchar(30))
+
+create table RoleMaster
+(ID int primary key identity,
+RoleName Varchar(40))
+
+create table UserRoleMapping
+( ID int primary key,
+UserID int not null,
+RoleID int not null)
+
+--add references
+alter table userRolemapping
+add foreign key (RoleID) references RoleMaster(ID)
+
+alter table userRolemapping
+add foreign key (UserID) references Users(ID)
+
+insert into Users values('Banu','Banu@123')

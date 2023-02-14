@@ -9,7 +9,7 @@ namespace ModelValidationsPrj.Controllers
     
     public class JobApplicationController : Controller
     {
-        // GET: JobApplication
+        // GET: JobApplication       
         public ActionResult Index()
         {
             return View();
@@ -18,6 +18,7 @@ namespace ModelValidationsPrj.Controllers
         [HttpPost]
         public ActionResult Index(Models.JobApplication JA)
         {
+
             if (ModelState.IsValid)
             {
                 ViewBag.Result = "Application Submitted Successfully";
@@ -26,5 +27,7 @@ namespace ModelValidationsPrj.Controllers
                 ViewBag.Result = "Invalid Data Provided.. Please Re Enter";
             return View();
         }
+
+        
     }
 }

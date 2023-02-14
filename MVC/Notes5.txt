@@ -1,0 +1,51 @@
+Filters : Are MVC .Net Framework attributes that allows us to inject some logic into the application that would be executed before or after an action
+
+Need for Filters : To perform certain common functionalities in the application viz.
+   Caching
+   Logging
+   Error Handling
+   Authenticate or Authorize
+
+MVC framework supports 5 different types of Filters
+
+1. Authentication Filter  --- IAuthenticationFilter
+2. Authorization Filter   ---- IAuthorizationFilter
+3. Action Filter          
+4. Result Filter
+5. Exception Filter
+
+the above is the order of filter execution (1-4), but Exception filters can occur any time in no order(when ever there is an exception)
+
+Predefined Filters :
+ Authorize
+ HandleError  : cannot log error details. Cannot act outside the controller. Cannot give different error vies based on different situations
+ OutputCache
+ ValidateInput
+ RequireHttps
+
+We can create Custom Filters
+
+-Filters Can be applied at 3 different levels
+   1. Application Level (Global to all controllers and actions)
+   2. Controller Level (all action methods of a controller)
+   3. Action method Level(specific action method)
+
+Example : If we have to create a Cutom Exception filter, then 
+
+
+
+Security :Authentication and Authorization
+
+Types of Authentication :
+  Forms Authentication 
+  Windows Authentication
+  Passport Authentication 
+  None 
+
+Forms Authentication is available in System.Web.Security. in order to implement forms authentication, we need to do 3 things
+  1. Set Authentication Mode =Forms (in web.config)
+  2. We will setAuthCookie for the forms authentication (login view)
+  3. Signout (logout)
+
+
+

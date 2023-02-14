@@ -1,0 +1,79 @@
+View Model : A model consisting of data from various other Models. 
+
+Employee {  }
+
+Address { }
+
+EmployyeAddress  {  } 
+
+HTML Helpers : Are C# methods that return HTML strings. Using these methods we can render any html control viz. textbox,image,buton,etc..
+
+- There are many built-in html helpers. 
+- We can create cutom helpers also
+
+-Types of HTML Helpers :
+  1. Inline  
+     are used on a single view page using @helper.
+   Eg :
+       @helper Myfirsthelper(string[] cities)
+        {
+          <ol>
+            @foreach(string c in cities)
+             {
+                <li>@c</li>
+             }
+         </ol>
+         }
+
+
+  2. Built-in
+  	 1. Standard : are mainly used to render Html elements like TextBox, CheckBox,Radio Buttons etc
+         Eg :
+            @html.ActionLink()-  to create links on apage
+            @html.TextBox()- html text box
+            @html.BeginFor() - start a form
+              "    Password()
+         
+  	 2. Strongly Typed : are helpers that are bound to a Model using Lambda Expressions
+         Eg:
+            @html.LabelFor(model=> model.Empid)
+            @html.TextBoxFor(model=>model.Empid)
+
+ 	 3. Templated : Are used for Display and Input. It automatically generates HTMl as per the ModelProperty
+ 	                for the complete Model in a single tag.
+                   These are divided into two categories
+
+                     1. Display Templates
+
+                         @html.Diplay()
+                         @html.DisplayFor()
+                         @html.DisplayName()
+                         @html.DisplayModelFor()
+
+                     2. Editor Templates
+                        @html.Editor()
+                        @html.EditorFor()
+                        @html.EditorForModel()
+
+    
+                  
+ 4. Custom : We need to create classes that implement the Ihtml interface
+                Static custom helpers
+                Extended Custom Helpers
+
+
+
+
+Model Validations : Validations that can be done either using Data Annotations or through Coding
+  In Built Validation classes are
+               Required
+               Compare
+               StringLength
+               Range
+               Datatype
+               Regular Expression etc..
+
+Custom Validation : We can create classes that have to inherit from ValidationAttribute class unde System.ComponetModel.DataAnnotaions namespace
+- Write the Required Logiv by overriding the IsValid protected function of the base class
+- Apply the annotation to the model property
+
