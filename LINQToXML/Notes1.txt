@@ -1,0 +1,32 @@
+Linq to XML :
+
+ Functional Construction : Is the ability to create an XML tree in a single statement
+
+<?xml version="1.0" encoding="utf-8" standalone="yes">  -- declaration
+<!-- An example of XML Tree-->         -- comment
+<Products>
+ <product Id= "1">                      -- Attribute
+ <name>Pens</name>                      --Elements
+<category>stationary</category>
+<price>20</price>
+</product>
+ <product Id= "2">
+ <name>Pencils</name>
+<category>stationary</category>
+<price>10</price>
+</product>
+
+Classes that help to create an XML document are available in System.Xml.Linq namespace
+    --XDocument class - to create an xml document
+    --XDeclaration class - to declare a document type
+    --XComment class - to have meaningful comment entries
+    --XElement class - to create element of the xml doc tag
+    --XAttribute class - to create attributes for an xml document
+
+1. Creating xml document using the various above mentioned classes.
+2. Creating xml document using in-memory collection of objects
+3. Querying the Xml Document using linq to xml
+4. XML Document Manipulation
+    -- inserting/Adding (Add(),AddFirst(),AddBeforeSelf().AddAfterSelf()
+    -- modifying 
+    -- deleting

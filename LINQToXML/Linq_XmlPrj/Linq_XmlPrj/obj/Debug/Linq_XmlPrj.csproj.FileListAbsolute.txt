@@ -1,0 +1,7 @@
+C:\Banu\Medusind\M_B1\LINQToXML\Linq_XmlPrj\Linq_XmlPrj\bin\Debug\Linq_XmlPrj.exe.config
+C:\Banu\Medusind\M_B1\LINQToXML\Linq_XmlPrj\Linq_XmlPrj\bin\Debug\Linq_XmlPrj.exe
+C:\Banu\Medusind\M_B1\LINQToXML\Linq_XmlPrj\Linq_XmlPrj\bin\Debug\Linq_XmlPrj.pdb
+C:\Banu\Medusind\M_B1\LINQToXML\Linq_XmlPrj\Linq_XmlPrj\obj\Debug\Linq_XmlPrj.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\LINQToXML\Linq_XmlPrj\Linq_XmlPrj\obj\Debug\Linq_XmlPrj.exe
+C:\Banu\Medusind\M_B1\LINQToXML\Linq_XmlPrj\Linq_XmlPrj\obj\Debug\Linq_XmlPrj.pdb
+C:\Banu\Medusind\M_B1\LINQToXML\Linq_XmlPrj\Linq_XmlPrj\obj\Debug\Linq_XmlPrj.csproj.AssemblyReference.cache

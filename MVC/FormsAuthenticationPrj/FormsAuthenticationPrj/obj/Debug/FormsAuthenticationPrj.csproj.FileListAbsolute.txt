@@ -69,8 +69,8 @@ C:\Banu\Medusind\M_B1\MVC\FormsAuthenticationPrj\FormsAuthenticationPrj\bin\Syst
 C:\Banu\Medusind\M_B1\MVC\FormsAuthenticationPrj\FormsAuthenticationPrj\bin\System.Web.Helpers.xml
 C:\Banu\Medusind\M_B1\MVC\FormsAuthenticationPrj\FormsAuthenticationPrj\bin\System.Web.Mvc.xml
 C:\Banu\Medusind\M_B1\MVC\FormsAuthenticationPrj\FormsAuthenticationPrj\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Banu\Medusind\M_B1\MVC\FormsAuthenticationPrj\FormsAuthenticationPrj\obj\Debug\FormsAuthenticationPrj.csproj.AssemblyReference.cache
 C:\Banu\Medusind\M_B1\MVC\FormsAuthenticationPrj\FormsAuthenticationPrj\obj\Debug\FormsAuthenticationPrj.csproj.CoreCompileInputs.cache
 C:\Banu\Medusind\M_B1\MVC\FormsAuthenticationPrj\FormsAuthenticationPrj\obj\Debug\FormsAuthenticationPrj.csproj.CopyComplete
 C:\Banu\Medusind\M_B1\MVC\FormsAuthenticationPrj\FormsAuthenticationPrj\obj\Debug\FormsAuthenticationPrj.dll
 C:\Banu\Medusind\M_B1\MVC\FormsAuthenticationPrj\FormsAuthenticationPrj\obj\Debug\FormsAuthenticationPrj.pdb
+C:\Banu\Medusind\M_B1\MVC\FormsAuthenticationPrj\FormsAuthenticationPrj\obj\Debug\FormsAuthenticationPrj.csproj.AssemblyReference.cache

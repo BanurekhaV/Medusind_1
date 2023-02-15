@@ -17,10 +17,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Employee Portal Medusind", "Index", "Employees", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+
+                    @if(User.Identity.IsAuthenticated)
+            {
+                <li>@Html.ActionLink("Get Employee List","Index","Employees")</li>
+               <li>@Html.ActionLink("Add Employee","Create","Employees")</li>
+                <li><a>Hello -@User.Identity.Name</a></li>
+                <li>@Html.ActionLink("Logout","Logout","Accounts")</li>
+                    }
+                    else
+            {
+                <li>@Html.ActionLink("Login","Login","Accounts")</li>
+            }
                 </ul>
             </div>
         </div>

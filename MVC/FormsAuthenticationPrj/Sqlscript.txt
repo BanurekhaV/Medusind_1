@@ -25,4 +25,11 @@ add foreign key (RoleID) references RoleMaster(ID)
 alter table userRolemapping
 add foreign key (UserID) references Users(ID)
 
-insert into Users values('Banu','Banu@123')
+Note : 
+add Employee details thru front end.
+
+insert into Users values('Admin','admin@123'), ('User','user@123'),('Contractor','contractor@123')
+
+insert into RoleMaster values('Admin'),('User'),('Contractor')
+
+insert into UserRoleMapping values(1,3,1),(2,4,2),(3,5,3),(4,3,2)

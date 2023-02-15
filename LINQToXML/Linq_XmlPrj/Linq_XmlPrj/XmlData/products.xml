@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--This is a XML Document's New Comment-->
+<Products>
+  <Product Id="100">
+    <Name>Pens</Name>
+    <Category>Stationary</Category>
+    <Price>20</Price>
+  </Product>
+  <Product Id="105">
+    <Name>Floaters</Name>
+    <Category>Footware</Category>
+    <price>1700</price>
+  </Product>
+  <Product Id="102">
+    <Name>Watches</Name>
+    <Category>Accessories</Category>
+    <Price>2000</Price>
+  </Product>
+  <Product Id="103">
+    <Name>USB</Name>
+    <Category>Electronics</Category>
+    <Price>500</Price>
+  </Product>
+  <Product Id="104">
+    <Name>Slip-On</Name>
+    <Category>Footware</Category>
+    <price>5000</price>
+  </Product>
+</Products>

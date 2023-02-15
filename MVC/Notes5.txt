@@ -48,4 +48,8 @@ Forms Authentication is available in System.Web.Security. in order to implement 
   3. Signout (logout)
 
 
+Role based Authentication: Create a class that Implements the System.Web.Security.RoleProvider abstract class  (code provided)
+
+--make necessary entries in the web.config file  
+-- modify the Authorize filters to authorize specific roles to access the web applications content
 
