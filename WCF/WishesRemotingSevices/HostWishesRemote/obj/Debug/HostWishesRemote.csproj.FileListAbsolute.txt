@@ -1,0 +1,12 @@
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\HostWishesRemote\bin\Debug\HostWishesRemote.exe.config
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\HostWishesRemote\bin\Debug\HostWishesRemote.exe
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\HostWishesRemote\bin\Debug\HostWishesRemote.pdb
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\HostWishesRemote\bin\Debug\WisherService.dll
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\HostWishesRemote\bin\Debug\WishesRemotingSevices.dll
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\HostWishesRemote\bin\Debug\WisherService.pdb
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\HostWishesRemote\bin\Debug\WishesRemotingSevices.pdb
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\HostWishesRemote\obj\Debug\HostWishesRemote.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\HostWishesRemote\obj\Debug\HostWishesRemote.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\HostWishesRemote\obj\Debug\HostWishesRemote.csproj.CopyComplete
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\HostWishesRemote\obj\Debug\HostWishesRemote.exe
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\HostWishesRemote\obj\Debug\HostWishesRemote.pdb

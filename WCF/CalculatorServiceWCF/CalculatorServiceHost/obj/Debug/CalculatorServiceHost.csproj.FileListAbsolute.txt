@@ -1,0 +1,11 @@
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceHost\bin\Debug\CalculatorServiceHost.exe.config
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceHost\bin\Debug\CalculatorServiceHost.exe
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceHost\bin\Debug\CalculatorServiceHost.pdb
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceHost\bin\Debug\CalculatorServiceWCF.dll
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceHost\bin\Debug\CalculatorServiceWCF.pdb
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceHost\bin\Debug\CalculatorServiceWCF.dll.config
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceHost\obj\Debug\CalculatorServiceHost.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceHost\obj\Debug\CalculatorServiceHost.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceHost\obj\Debug\CalculatorServiceHost.csproj.CopyComplete
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceHost\obj\Debug\CalculatorServiceHost.exe
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceHost\obj\Debug\CalculatorServiceHost.pdb

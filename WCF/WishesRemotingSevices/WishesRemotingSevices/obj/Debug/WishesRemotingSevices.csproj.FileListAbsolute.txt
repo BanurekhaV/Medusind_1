@@ -1,0 +1,5 @@
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WishesRemotingSevices\bin\Debug\WishesRemotingSevices.dll
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WishesRemotingSevices\bin\Debug\WishesRemotingSevices.pdb
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WishesRemotingSevices\obj\Debug\WishesRemotingSevices.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WishesRemotingSevices\obj\Debug\WishesRemotingSevices.dll
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WishesRemotingSevices\obj\Debug\WishesRemotingSevices.pdb

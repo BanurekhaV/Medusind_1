@@ -1,0 +1,7 @@
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceWCF\bin\Debug\CalculatorServiceWCF.dll.config
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceWCF\bin\Debug\CalculatorServiceWCF.dll
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceWCF\bin\Debug\CalculatorServiceWCF.pdb
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceWCF\obj\Debug\CalculatorServiceWCF.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceWCF\obj\Debug\CalculatorServiceWCF.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceWCF\obj\Debug\CalculatorServiceWCF.dll
+C:\Banu\Medusind\M_B1\WCF\CalculatorServiceWCF\CalculatorServiceWCF\obj\Debug\CalculatorServiceWCF.pdb

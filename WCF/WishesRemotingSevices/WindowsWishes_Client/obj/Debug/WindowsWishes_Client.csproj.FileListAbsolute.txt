@@ -1,0 +1,13 @@
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\bin\Debug\WindowsWishes_Client.exe.config
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\bin\Debug\WindowsWishes_Client.exe
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\bin\Debug\WindowsWishes_Client.pdb
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\bin\Debug\WishesRemotingSevices.dll
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\bin\Debug\WishesRemotingSevices.pdb
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\obj\Debug\WindowsWishes_Client.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\obj\Debug\WindowsWishes_Client.Form1.resources
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\obj\Debug\WindowsWishes_Client.Properties.Resources.resources
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\obj\Debug\WindowsWishes_Client.csproj.GenerateResource.cache
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\obj\Debug\WindowsWishes_Client.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\obj\Debug\WindowsWishes_Client.csproj.CopyComplete
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\obj\Debug\WindowsWishes_Client.exe
+C:\Banu\Medusind\M_B1\WCF\WishesRemotingSevices\WindowsWishes_Client\obj\Debug\WindowsWishes_Client.pdb

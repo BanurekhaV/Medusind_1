@@ -1,0 +1,23 @@
+create table tblemployee
+(Id int,
+EName nvarchar(50),
+Gender nvarchar(12),
+DOB datetime )
+
+insert into tblemployee values(1,'Bob','Male','12/2/1981'),
+(2,'John','Male','05/8/1984'),
+(3,'Rosy','Female','09/24/1985')
+
+select * from tblemployee
+
+create procedure sp_GetEmployee @id int
+as
+begin
+select Id,Ename,Gender,DOB from tblemployee where Id=@id 
+end
+
+create procedure sp_SaveEmployee @id int, @ename nvarchar(50),@gender nvarchar(12),@dob datetime
+as
+begin
+insert into tblemployee values (@id,@ename,@gender,@dob)
+end

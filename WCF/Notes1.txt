@@ -1,0 +1,81 @@
+WCF : Windows Communication Framework for building distributed, interoperable applications.
+
+Distributed Applications : Having the different parts of the application in different locations/machines
+
+
+Enterprise Services
+Remoting Services   -  dotnet remoting (only dot net applications can interact)
+Web Services  -        SOAP protocol (other protocols were not supported)
+WCF          _ can configure multiple endpoints to allow interoperable clients with different needs to access the same services
+
+
+  Contracts in WCF :
+
+1. Service Contract : This includes the various operations/functionalities performed by the service and exposed as a single unit through an Interface
+
+  [ServiceContract]
+ public interface IService { }
+
+2. Operation Contract : Are those methods that are exposed by the service to be invoked by the client
+
+
+  [ServiceContract]
+ public interface IService {
+
+[OperationContract]
+Dataset GetDetails(int EmpId);
+}
+
+3. DataContract : Exposes the Data Types/members of the Service class
+
+[DataContract]
+public class Employee
+{
+  public int EmpId;
+
+  [DataMember]
+  public string EmpName;
+}
+
+4. FaultContrcat : This enables the service to send customised error message/s to a client by creating a user-defined class
+
+[ServiceContract]
+ public interface IService {
+
+ [OperationContract]
+ [FaultContract(typeof(sampleFaultException))]
+  
+  Dataset GetDetails(int EmpId);
+
+
+ }
+
+  [DataContract]
+public class sampleFaultException
+{
+  [DataMember]
+public string ErrorMessage;
+}
+
+5. MessageContract: Describes the Format and structure of the message exchanged between client application and the WCF Service
+
+[MessageContract]
+public class MessageStore{
+
+[MessageHeader] public DateTime CurrentTime;
+[MessageBody] public EmployeeName;
+}
+
+
+
+
+WCF - Bindings : WCF Endpoint consists of 3 things
+  1. Address : Where the WCF Services are available
+  2. Binding : Defines how the client needs to communicate with the service
+  3. Contract : What the service can do for us
+
+The bindings for the communication, can define
+  1. Transport Protocol: (HTTP,TCP,namedPipe,MSMQ)
+  2. Message Encoding : (text/xml, binary)
+  3. Protocol
+
