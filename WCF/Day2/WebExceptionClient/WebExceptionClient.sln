@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebExceptionClient", "WebExceptionClient\WebExceptionClient.csproj", "{1CDE10F9-860F-49B6-B69F-E3ED11A42BAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CDE10F9-860F-49B6-B69F-E3ED11A42BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CDE10F9-860F-49B6-B69F-E3ED11A42BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CDE10F9-860F-49B6-B69F-E3ED11A42BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CDE10F9-860F-49B6-B69F-E3ED11A42BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2E61479-4E17-4D4B-A32C-105607B21897}
+	EndGlobalSection
+EndGlobal

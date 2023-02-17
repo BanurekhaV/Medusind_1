@@ -1,0 +1,154 @@
+WCF Security : 
+
+Authorization : The process of determining what rights the authenticated users have.
+
+Confidentiality : Only the authorized users are receiving and sending messages
+
+Integrity : Process of ensuring that none tamoers the messages being transmitted
+
+   By Signing the messages, we can ensure Integrity
+--------------------------------------------------------
+
+Whenever the client communicates with the wcf services, 2 things are considered
+1. WCF Message itself
+2. The medium or protocol over which the message is being sent(HTTP,TCP,NamedPipe,MSMQ  etc..)
+
+Transport Security : Each of the above protocol have their own ways of securing the transport viz. SSL, TLS
+
+
+Message Security: Can be implemented by encapsulating the security credentials with SOAP messages
+
+
+
+Message Exchange Patterns : WCF supports 3 types of patterns
+
+1. Request-Reply  - Default pattern, where a client waits for the service request call to complete. Till such time the client cannot process any other service request, even though the earlier request returns a void type
+Except MSMQ , all other bindings support Request-Reply Pattern
+
+Eg : 
+[ServiceContract]
+public interface ICalculatorService
+{
+    [OperationContract]
+ string Message(string name);
+
+}    
+
+or
+
+[ServiceContract]
+public interface ICalculatorService
+{
+    [OperationContract(IsOneWay=false]
+ string Message(string name);
+
+}
+
+2. One Way : Only one message is exchanged between the client and the service. The client after making the service request does not wait for a response message. Also the service does not report/return anything to the client. The fault does not get reported, because it is one way pattern. 
+
+We get to know that the connection has faulted, only when the client initiates another request to the service
+
+
+3. Duplex : Is a combination of both Request-Reply and One-Way operations. This can be achieved using CallBacks
+
+
+WCF Service :
+
+Service Contract 
+-----------------
+
+[ServiceContract(CallbackContract = typeof(IReportServiceCallBack))]
+    public interface IReportService
+    {
+        [OperationContract(IsOneWay =true)]  //changed it to oneway 
+        void ProcessReport();
+    }
+
+    public interface IReportServiceCallBack
+    {
+        [OperationContract(IsOneWay =true)]
+
+        void ShowStatus(int percentagecompletion);
+
+    }
+
+Implementing Class
+--------------------
+
+
+   public class ReportService : IReportService
+    {
+        public void ProcessReport()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                Thread.Sleep(100);
+
+                //get the callback channel to send status to the client
+                OperationContext.Current.GetCallbackChannel<IReportServiceCallBack>().ShowStatus(i);
+            }
+        }
+    }
+
+
+
+App.Config File
+----------------
+
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<system.serviceModel>
+		<behaviors>
+			<serviceBehaviors>
+				<behavior name="mexBehaviour">
+					<serviceMetadata httpGetEnabled="true"/>
+					<serviceDebug includeExceptionDetailInFaults="true"/>
+				</behavior>
+			</serviceBehaviors>
+		</behaviors>
+		<services>
+			<service name="ReportService.ReportService" behaviorConfiguration="mexBehaviour">
+
+				<endpoint address="ReportService" binding="netTcpBinding" bindingConfiguration=""
+						  contract="ReportService.IReportService">
+				</endpoint>
+				
+				<host>
+					<baseAddresses>
+						<add baseAddress="http://localhost:8080"/>
+						<add baseAddress="net.tcp://localhost:8090"/>
+					</baseAddresses>
+				</host>
+			</service>
+		</services>
+	</system.serviceModel>
+</configuration>
+
+
+Client - Windows application:
+------------------------------
+
+    public partial class Form1 : Form, ServiceReference1.IReportServiceCallback
+    {
+        
+        public Form1()
+        {
+            InitializeComponent();
+
+         InstanceContext icontext = new InstanceContext(this);
+
+          ServiceReference1.ReportServiceClient client =
+            new ServiceMessage.ReportServiceClient(icontext);
+        }
+
+
+ private void btn_processreport_Click(object sender, EventArgs e)
+        {
+            
+            client.ProcessReport();
+        }
+
+        public void ShowStatus(int percentagecompletion)
+        {
+            textBox1.Text = percentagecompletion.ToString() + " % Completed";
+        }

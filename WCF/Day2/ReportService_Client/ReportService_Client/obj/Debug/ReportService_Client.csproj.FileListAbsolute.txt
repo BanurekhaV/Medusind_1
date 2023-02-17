@@ -1,0 +1,10 @@
+C:\Banu\Medusind\M_B1\WCF\Day2\ReportService_Client\ReportService_Client\bin\Debug\ReportService_Client.exe.config
+C:\Banu\Medusind\M_B1\WCF\Day2\ReportService_Client\ReportService_Client\bin\Debug\ReportService_Client.exe
+C:\Banu\Medusind\M_B1\WCF\Day2\ReportService_Client\ReportService_Client\bin\Debug\ReportService_Client.pdb
+C:\Banu\Medusind\M_B1\WCF\Day2\ReportService_Client\ReportService_Client\obj\Debug\ReportService_Client.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B1\WCF\Day2\ReportService_Client\ReportService_Client\obj\Debug\ReportService_Client.Form1.resources
+C:\Banu\Medusind\M_B1\WCF\Day2\ReportService_Client\ReportService_Client\obj\Debug\ReportService_Client.Properties.Resources.resources
+C:\Banu\Medusind\M_B1\WCF\Day2\ReportService_Client\ReportService_Client\obj\Debug\ReportService_Client.csproj.GenerateResource.cache
+C:\Banu\Medusind\M_B1\WCF\Day2\ReportService_Client\ReportService_Client\obj\Debug\ReportService_Client.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\WCF\Day2\ReportService_Client\ReportService_Client\obj\Debug\ReportService_Client.exe
+C:\Banu\Medusind\M_B1\WCF\Day2\ReportService_Client\ReportService_Client\obj\Debug\ReportService_Client.pdb

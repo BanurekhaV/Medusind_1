@@ -1,0 +1,10 @@
+C:\Banu\Medusind\M_B1\WCF\Day2\MessageService_WindowsClient\MessageService_WindowsClient\bin\Debug\MessageService_WindowsClient.exe.config
+C:\Banu\Medusind\M_B1\WCF\Day2\MessageService_WindowsClient\MessageService_WindowsClient\bin\Debug\MessageService_WindowsClient.exe
+C:\Banu\Medusind\M_B1\WCF\Day2\MessageService_WindowsClient\MessageService_WindowsClient\bin\Debug\MessageService_WindowsClient.pdb
+C:\Banu\Medusind\M_B1\WCF\Day2\MessageService_WindowsClient\MessageService_WindowsClient\obj\Debug\MessageService_WindowsClient.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B1\WCF\Day2\MessageService_WindowsClient\MessageService_WindowsClient\obj\Debug\MessageService_WindowsClient.Form1.resources
+C:\Banu\Medusind\M_B1\WCF\Day2\MessageService_WindowsClient\MessageService_WindowsClient\obj\Debug\MessageService_WindowsClient.Properties.Resources.resources
+C:\Banu\Medusind\M_B1\WCF\Day2\MessageService_WindowsClient\MessageService_WindowsClient\obj\Debug\MessageService_WindowsClient.csproj.GenerateResource.cache
+C:\Banu\Medusind\M_B1\WCF\Day2\MessageService_WindowsClient\MessageService_WindowsClient\obj\Debug\MessageService_WindowsClient.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B1\WCF\Day2\MessageService_WindowsClient\MessageService_WindowsClient\obj\Debug\MessageService_WindowsClient.exe
+C:\Banu\Medusind\M_B1\WCF\Day2\MessageService_WindowsClient\MessageService_WindowsClient\obj\Debug\MessageService_WindowsClient.pdb
